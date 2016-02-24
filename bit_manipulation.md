@@ -1,4 +1,4 @@
-#### Bit Manipulation
+# Bit Manipulation
 [(Summary)](bit_manipulation.md#summary)
 Bit manipulation is used to set up configuration registers and change the state of output pins to control devices connected to the microcontroller. The register we write to and the bits we change determint the functionality (refer to the datasheet for your chip, eg: [Atmega2560 Datasheet](http://www.atmel.com/Images/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf).
 
@@ -78,7 +78,7 @@ Multiple toggles
 REGISTER ^= (1<<0)|(1<<2);
 ```
 
-#### Summary
+# Summary
 Use hex to set a whole register or port.
 ```c
 REGISTER = 0x00;

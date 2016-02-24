@@ -19,7 +19,7 @@ REGISTER = 0x04; //R2 high, all other bits low  0000 0100, LLLL LHLL
 We have to use hex becuase there is no standard way of represeting binary in C, but there is an easier way...
 
 #### Bit shift notation
-Bit shifting is easier and more clear.
+Bit shifting is easier and more clear.  
 Let's do the same thing as above.
 ```c
 REGISTER = (1<<0); //R0 high, all other bits low, 0000 0001, LLLL LLLH
@@ -33,9 +33,9 @@ REGISTER = (1<<0)|(1<<2)|(1<<5)|(1<<7); //adding more bits is easy!
 Note that above we are setting all the unspecified bits to '0'.
 
 #### Setting a bit
-Setting a bit means making it go to 1 (previous value doesn't matter).
-It is possible to set one bit and leave the rest alone. This is very useful for controlling devices that are connected to your microcontroller one pin at a time.
-To set one bit high we do a bitwise OR of current value and the bits we want to set and then write the result back to the register
+Setting a bit means making it go to 1 (previous value doesn't matter).  
+It is possible to set one bit and leave the rest alone. This is very useful for controlling devices that are connected to your microcontroller one pin at a time.  
+To set one bit high we do a bitwise OR of current value and the bits we want to set and then write the result back to the register.  
 Set R2 while leaving all the other bits as they are.
 ```c
 REGISTER = REGISTER | (1<<2); //xxxx xx1x (x means value unchanged)
@@ -50,8 +50,8 @@ REGISTER \= (1<<0)|(1<<2); //R0 and R2 high, others left alone, xxxx x1x1
 ```
 
 #### Clearing a bit
-Clearing a bit means making it go to 0 (previous value doesn't matter).
-Clearing a bit is a little more tricky. We have to us the bitwise AND assignment operator "&=", but we also need the bitwise complement of the shifted expression (we're making 0's where we want the bits to turn off instead of 1's where we want the bits to turn on).
+Clearing a bit means making it go to 0 (previous value doesn't matter).  
+Clearing a bit is a little more tricky. We have to us the bitwise AND assignment operator "&=", but we also need the bitwise complement of the shifted expression (we're making 0's where we want the bits to turn off instead of 1's where we want the bits to turn on).  
 This is done with the bitwise NOT operator "~"
 ```c
 REGISTER = REGISTER & ~(1<<2); //xxxx xx0x
@@ -66,8 +66,8 @@ REGISTER &= ~((1<<0)|(1<<2)); //xxxx x0x0
 ```
 
 #### Toggling a bit
-Toggling is flipping a bit from 0 to 1 or from 1 to 0 (the previous value DOES matter this time, but we dont have to know it).
-It's useful for lights or switching the direction of things
+Toggling is flipping a bit from 0 to 1 or from 1 to 0 (the previous value DOES matter this time, but we dont have to know it).  
+It's useful for lights or switching the direction of things.  
 This is pretty much the same as setting a bit, but we use the exclusive or (XOR) assigmnent operator "^=" (carat on the keyboard), and it is shortened in the same way as before.
 ```c
 REGISTER = REGISTER ^ (1<<2); //toggle
@@ -106,7 +106,7 @@ REGISTER ^= (1<<1)|(1<<3);
 
 #### Tips
 
-- Comment your code and use the clearest notation possible.
+- Comment your code and use the clearest notation possible.  
   Don't expect help if your code isn't organised and readable.
 
 - The bits of the registers from the data sheet have names --- USE THEM! eg:

@@ -1,10 +1,10 @@
-# Bit Manipulation
+### Bit Manipulation
 
 [(Summary)](bit_manipulation.md#summary)
 
 Bit manipulation is used to set up configuration registers and change the state of output pins to control devices connected to the microcontroller. The register we write to and the bits we change determint the functionality (refer to the datasheet for your chip, eg: [Atmega2560 Datasheet](http://www.atmel.com/Images/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf)
 
-### Writing a register at once
+#### Writing a register at once
 
 Setting a group of bits using hex notation
 ```c
@@ -21,7 +21,7 @@ REGISTER = 0x04; //R2 high, all other bits low  0000 0100, LLLL LHLL
 ```
 We have to use hex becuase there is no standard way of represeting binary in C, but there is an easier way...
 
-### Bit shift notation
+#### Bit shift notation
 Bit shifting is easier and more clear.
 
 Let's do the same thing as above.
@@ -38,7 +38,7 @@ REGISTER = (1<<0)|(1<<2)|(1<<5)|(1<<7); //adding more bits is easy!
 ```
 Note that above we are setting all the unspecified bits to '0'.
 
-### Setting a bit
+#### Setting a bit
 
 Setting a bit means making it go to 1 (previous value doesn't matter).
 
@@ -60,7 +60,7 @@ You can set multiple bits and leave the rest alone; just like before but with "|
 REGISTER \= (1<<0)|(1<<2); //R0 and R2 high, others left alone, xxxx x1x1
 ```
 
-### Clearing a bit
+#### Clearing a bit
 
 Clearing a bit means making it go to 0 (previous value doesn't matter).
 
@@ -80,7 +80,7 @@ The combination is a little more complicated (but not much). Just add extra brac
 ```c
 REGISTER &= ~((1<<0)|(1<<2)); //xxxx x0x0
 ```
-### Toggling a bit
+#### Toggling a bit
 
 Toggling is flipping a bit from 0 to 1 or from 1 to 0 (the previous value DOES matter this time, but we dont have to know it).
 
@@ -96,7 +96,7 @@ Multiple toggles
 REGISTER ^= (1<<0)|(1<<2);
 ```
 
-# Summary
+### Summary
 
 Use hex to set a whole register or port.
 ```c
@@ -125,7 +125,7 @@ REGISTER ^= (1<<1)|(1<<3);
 ```
 
 
-# Tips
+### Tips
 
 - Comment your code and use the clearest notation possible.
   

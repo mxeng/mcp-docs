@@ -94,7 +94,7 @@ REGISTER |= (1<<3);
 REGISTER |= (1<<2)|(1<<7);
 ```
 Use &= with ~ for clearing bits
-```
+```c
 REGISTER &= ~(1<<3);
 REGISTER &= ~((1<<2)|(1<<4));
 ```

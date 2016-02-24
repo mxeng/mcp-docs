@@ -2,7 +2,7 @@
 
 [(Summary)](bit_manipulation.md#summary)
 
-Bit manipulation is used to set up configuration registers and change the state of output pins to control devices connected to the microcontroller. The register we write to and the bits we change determint the functionality (refer to the datasheet for your chip, eg: [Atmega2560 Datasheet](http://www.atmel.com/Images/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf)
+Bit manipulation is used to set up configuration registers and change the state of output pins to control devices connected to the microcontroller. The register we write to and the bits we change determint the functionality (refer to the datasheet for your chip, eg: [Atmega2560 Datasheet](http://www.atmel.com/Images/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf).
 
 #### Writing a register at once
 
@@ -125,7 +125,7 @@ REGISTER ^= (1<<1)|(1<<3);
 ```
 
 
-### Tips
+#### Tips
 
 - Comment your code and use the clearest notation possible.
   

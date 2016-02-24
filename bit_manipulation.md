@@ -1,4 +1,4 @@
-### Bit Manipulation
+#### Bit Manipulation
 
 [(Summary)](bit_manipulation.md#summary)
 
@@ -96,7 +96,7 @@ Multiple toggles
 REGISTER ^= (1<<0)|(1<<2);
 ```
 
-### Summary
+#### Summary
 
 Use hex to set a whole register or port.
 ```c

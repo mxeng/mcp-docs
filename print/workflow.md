@@ -5,14 +5,14 @@ Example input file: `poster.md`
 1. Edit markdown for printing (adjust headings and remove links)
 
 2. Convert markdown to html:
-   ```bash
+   ```
    grip poster.md --export poster.html
    ```
 
 3. Manually edit html to remove header and adjust top margin to 15px
 
 4.  Convert html to a pdf:
-   ```bash
+   ```
    wkhtmltopdf --page-height "740mm" --page-width "210mm" poster.html poster.pdf
    ```
 5. Adjust the page height to fit on one long page.

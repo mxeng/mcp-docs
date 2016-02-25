@@ -34,7 +34,7 @@
       
       
       <div class="repository-with-sidebar repo-container with-full-navigation">
-
+              
               <div id="grip-content" class="markdown-body entry-content">
                 <h1>
 <a id="user-content-bit-manipulation" class="anchor" href="#bit-manipulation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Bit Manipulation</h1>
@@ -150,9 +150,8 @@ REGISTER |= (<span class="pl-c1">1</span>&lt;&lt;<span class="pl-c1">2</span>)|(
 
 <p>Use &amp;= with ~ for clearing bits</p>
 
-<pre><code>REGISTER &amp;= ~(1&lt;&lt;3);
-REGISTER &amp;= ~((1&lt;&lt;2)|(1&lt;&lt;4));
-</code></pre>
+<div class="highlight highlight-source-c"><pre>REGISTER &amp;= ~(<span class="pl-c1">1</span>&lt;&lt;<span class="pl-c1">3</span>);
+REGISTER &amp;= ~((<span class="pl-c1">1</span>&lt;&lt;<span class="pl-c1">2</span>)|(<span class="pl-c1">1</span>&lt;&lt;<span class="pl-c1">4</span>));</pre></div>
 
 <p>Use ^= to toggle bits</p>
 

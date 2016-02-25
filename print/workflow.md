@@ -6,10 +6,10 @@ Example input file: `poster.md`
 
 2. Convert markdown to html:
    ```
-   grip poster.md --export poster.html
+   grip --title "" poster.md --export poster.html
    ```
 
-3. Manually edit html to remove header and adjust top margin to 15px
+3. Manually edit html to adjust top margin to 15px
 
 4.  Convert html to a pdf:
    ```

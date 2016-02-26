@@ -15,7 +15,7 @@ Some factors to consider:
 - For best results, you should manually calibrate the relationship between the input voltage and the range.  You can then use a lookup table or a modelled mathematical relationship to determine the range corresponding to a given voltage.
 - These sensors will be used for your final robot task, so the calibration you do here will be valuable later as long as it is done well.
 
-![IR Distance Sensor](https://cdn.sparkfun.com//assets/parts/1/8/4/00242-1.jpg | width=300)
+<img src="https://cdn.sparkfun.com//assets/parts/1/8/4/00242-1.jpg" alt="IR Distance Sensor" width="30%">
 
 ### Your documentation should include:
 - A clear specification of the objective and scope of your task **(C1)**

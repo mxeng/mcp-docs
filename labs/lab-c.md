@@ -16,10 +16,8 @@ Some factors to consider:
 - These sensors will be used for your final robot task, so the calibration you do here will be valuable later as long as it is done well.
 
 ### Your documentation should include:
-- A clear specification of the objective and scope of your task (C1)
-- All circuit diagrams (C2)
-- Flowcharts showing the program logic (C3)
-
- A clear summary of all calibration tests and resulting model to be used in code. (C4)
-
- A graph showing the results of your calibration (C5)
+- A clear specification of the objective and scope of your task **(C1)**
+- All circuit diagrams **(C2)**
+- Flowcharts showing the program logic **(C3)**
+- A clear summary of all calibration tests and resulting model to be used in code. **(C4)**
+- A graph showing the results of your calibration **(C5)**

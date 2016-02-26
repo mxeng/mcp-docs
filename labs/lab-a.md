@@ -7,7 +7,7 @@ Preliminary reading and reference material:
 - The Arduino Mega page at http://arduino.cc/en/Main/ArduinoBoardMega
 - GNU C reference: http://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html
 - C reference: http://en.cppreference.com/w/c
-- You may wish to look at the ATMEGA1280/2560 datasheet, but be warned it is large
+- You may wish to look at the [Atmel ATmega2560 Datasheet](http://www.atmel.com/Images/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf), but be warned it is large
 
 The aim of this laboratory session is to familiarise yourselves with the equipment and software that we will be using for the rest of semester.  By the end of the session, you should have confirmed that the Microcontroller, kit board and development environment are all working correctly, and you should have practiced modifying, compiling, and downloading code to the ATMEGA in order to drive some output LEDs.
 

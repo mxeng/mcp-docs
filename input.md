@@ -1,10 +1,10 @@
-# Bit Manipulation
+# Input
 [(Summary)](bit_manipulation.md#summary)
-Bit manipulation is used to set up configuration registers and change the state of output pins to control devices connected to the microcontroller. The register we write to and the bits we change determint the functionality (refer to the datasheet for your chip, eg: [Atmega2560 Datasheet](http://www.atmel.com/Images/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf).
+By reading the value of the ```PINx``` registries we can do input on the microcontroller.
 
 
-#### Writing a register at once
-Setting a group of bits using hex notation
+#### Wiring a switch
+A switch needs to be wired so that it is in a defined state when it is pressed and also when it is not pressed. Usually either a pull up or pull down resistor is used for this task.
 ```c
 REGISTER = 0xFF; //all high
 REGISTER = 0xF0; //upper nibble high, lower nibble low

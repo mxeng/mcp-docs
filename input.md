@@ -4,7 +4,10 @@ By reading the value of the ```PINx``` registries we can do input on the microco
 
 
 #### Wiring a switch
-A switch needs to be wired so that it is in a defined state when it is pressed and also when it is not pressed. Usually either a pull up or pull down resistor is used for this task.
+A switch needs to be wired so that it is in a defined state when it is pressed and also when it is not pressed. Usually either a pull up or pull down resistor is used for this task as seen in the schematic below.
+
+![./schematics/input_and_adc.svg]
+
 ```c
 REGISTER = 0xFF; //all high
 REGISTER = 0xF0; //upper nibble high, lower nibble low

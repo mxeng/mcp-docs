@@ -1,6 +1,6 @@
 # Input
 [(Summary)](bit_manipulation.md#summary)
-By reading the value of the ```PINx``` registries we can do input on the microcontroller.
+By reading the value of the ```PINy``` registries we can do input on the microcontroller.
 
 #### Putting a pin or a port into input mode
 The microcontroller's ports default to high impedance output mode when it is reset or powered on (it's safer becuase the pins are protected from shorts), but we don't want to rely on this becuase previous code (either ours or a dodgey bootloader) might have put some pins into output mode.
@@ -42,14 +42,20 @@ else //if PINA0 is low (when the button is pressed in the active low configurati
 ```
 
 
+#### Reading a voltage using the ADC
+The Analogue to Digital Converter (ADC) allows us to measure a continuously variable (analogue) voltage and turn this into a number that we can use in our code. The result is proportional to the voltage and scaled so that ```AREF``` is the max. On our microcontrollers this means that 0 corresponds to 0V and 1023 corresponds to 5V.
+
+To use the ADC using the basic ADC library provided, we must initialise it by putting this line at the top of our program where it should be run once (in our initialisation section):
 ```c
-REGISTER = 0xFF; //all high
-REGISTER = 0xF0; //upper nibble high, lower nibble low
-REGISTER = 0x00; //all low
-REGISTER = 0xCA; //HHLL HLHL, 8+4=12=0xC, 8+2=10=A
+adc_init();
 ```
-Setting one bit high
+Then when we want to read from one of the ADC's 16 channels we just use the ```adc_read()``` function where the single parameter is the channel number.
 ```c
-REGISTER = 0x01; //R0 high, all other bits low, 0000 0001, LLLL LLLH
-REGISTER = 0x04; //R2 high, all other bits low  0000 0100, LLLL LHLL
+static uint16_t sixteen_bit_variable = 0; //declare and initialise a sixteen bit unsigned integer variable
+sixteen_bit_variable = adc_read(2); //read the voltage on ADC2 and store the 10 bit result into a variable
+```
+We can put this function anywhere we want, just remember that it's a 10 bit result and sometimes we might need to modify that (like shifting it right twice before writing the eight most significant bit so a set of eight LED's).
+```c
+a = b*adc_read(0) + 2*adc_read(2);
+PORTC = adc_read(0)>>2;
 ```

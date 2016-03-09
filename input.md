@@ -1,6 +1,5 @@
 # Input
-[(Summary)](bit_manipulation.md#summary)
-By reading the value of the ```PINy``` registries we can do input on the microcontroller.
+By reading the value of the ```PINy``` registries we can do input on the microcontroller. We can also use the ADC to read continuously variable voltages.
 
 #### Putting a pin or a port into input mode
 The microcontroller's ports default to high impedance output mode when it is reset or powered on (it's safer becuase the pins are protected from shorts), but we don't want to rely on this becuase previous code (either ours or a dodgey bootloader) might have put some pins into output mode.
@@ -43,7 +42,7 @@ else //if PINA0 is low (when the button is pressed in the active low configurati
 
 
 #### Reading a voltage using the ADC
-The Analogue to Digital Converter (ADC) allows us to measure a continuously variable (analogue) voltage and turn this into a number that we can use in our code. The result is proportional to the voltage and scaled so that ```AREF``` is the max. On our microcontrollers this means that 0 corresponds to 0V and 1023 corresponds to 5V.
+The Analogue to Digital Converter (ADC) allows us to measure a continuously variable (analogue) voltage (like the voltage coming from the potentiometer connected to ADC0 in the schematic above) and turn this into a number that we can use in our code. The result is proportional to the voltage and scaled so that ```AREF``` is the max. On our microcontrollers this means that 0 corresponds to 0V and 1023 corresponds to 5V.
 
 To use the ADC using the basic ADC library provided, we must initialise it by putting this line at the top of our program where it should be run once (in our initialisation section):
 ```c

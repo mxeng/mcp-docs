@@ -26,3 +26,4 @@ and explain in your lab book what will happen to current flow when the motor is 
 (D5)
 7. Implement your design, ensuring that a demonstrator checks your circuit before power is
 applied.
+

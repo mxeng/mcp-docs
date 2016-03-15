@@ -6,10 +6,10 @@ This lab requires some preparation. In order to complete the lab within the sess
 
 Before the lab:
 - Read the ULN2803 Darlington driver and the 2N3804 transistor specification sheets
-- Review lectures on driving higher current loads, transistor amplifiers, Darlington
-drivers, flyback diodes and hardware interrupts
 - Read up on button-bounce, and consider ways of eliminating this problem.
 - Learn how to configure and use interrupts in AVR GCC. These tutorials are a good resource: http://www.fourwalledcubicle.com/AVRArticles.php
+- Review driving higher current loads, transistor amplifiers, Darlington
+drivers, flyback diodes and hardware interrupts (covered in the lectures)
 
 The objective of this lab is to drive high current outputs without any risk to the
 microcontroller. We will use a 12V lamp and a 12V DC motor as output loads.

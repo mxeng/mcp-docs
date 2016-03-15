@@ -2,7 +2,7 @@
 
 ###Laboratory D: Driving a higher current load
 
-This lab requires some preparation. In order to complete the lab within the session some work beforehand is required.
+**This lab requires some preparation. In order to complete the lab within the session some work beforehand is required.**
 
 Before the lab:
 - Read the ULN2803 Darlington driver and the 2N3804 transistor specification sheets

@@ -46,7 +46,7 @@ REGISTER |= (1<<2);
 ```
 You can set multiple bits and leave the rest alone; just like before but with "|=" insted of "='
 ```c
-REGISTER \= (1<<0)|(1<<2); //R0 and R2 high, others left alone, xxxx x1x1
+REGISTER |= (1<<0)|(1<<2); //R0 and R2 high, others left alone, xxxx x1x1
 ```
 
 #### Clearing a bit

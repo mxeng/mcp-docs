@@ -30,7 +30,7 @@ In order to do somethin based on the position of the switch we need to use the v
 
 We need to use the input register, but we have to mask the result of the read from the ```PINy``` register so that we only consider the bit that the switch is connected to. We do this with the bitwise and operator - remember that ```x&0=0``` and ```x&1=x```.
 ```c
-if(PINA & (1<<PINA0) //if PINA0 is high
+if(PINA & (1<<PINA0)) //if PINA0 is high
 {
   //stuff to do if PINA0 is high
 }

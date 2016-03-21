@@ -11,17 +11,17 @@ Before the lab:
 Task: Design a simple stop-watch, using the LCD display to show the elapsed time.
 - You should set up a hardware timer (e.g TIMER1) to time a suitable interval (say 1 or 10msec), and program variables to maintain counts of milliseconds, seconds and minutes. You will need to calculate suitable values for the prescaler and for the timer compare register.
 - Hardware interrupts should be used for button control.
-• This lab task is described in fairly broad terms. It is up to you to determine the detailed scope.
-• As a minimum, you should implement a toggle button which will “start” and “stop” the timer
-(E1), and a second button which will “reset” your stopwatch (E2). A debounce strategy will be
-needed for the toggle function to work properly.
+- This lab task is described in fairly broad terms. It is up to you to determine the detailed scope.
+- As a minimum, you should implement a toggle button which will “start” and “stop” the timer **(E1)**, and a second button which will “reset” your stopwatch **(E2)**. A debounce strategy will be needed for the toggle function to work properly. 
+
 Some factors to consider:
-• What precision will you record and display?
-• Do you need to debounce one or more of the buttons?
-• Is there any additional functionality which would be useful?
+- What precision will you record and display?
+- Do you need to debounce one or more of the buttons?
+- Is there any additional functionality which would be useful?
+
 Your documentation should include:
-• A clear specification of the scope of your task
-• All relevant calculations, including prescaler and comparison values. (E3)
-• All relevant circuit diagrams. (E4)
-• Some pseudocode or flowcharts (preferred) showing the implementation of the logic. (E5)
-• A description of any tests conducted to verify functionality. 
+- A clear specification of the scope of your task
+- All relevant calculations, including prescaler and comparison values. **(E3)**
+- All relevant circuit diagrams. **(E4)**
+- Some pseudocode or flowcharts (preferred) showing the implementation of the logic. **(E5)**
+- A description of any tests conducted to verify functionality. 

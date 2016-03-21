@@ -14,7 +14,7 @@
 - This lab task is described in fairly broad terms. It is up to you to determine the detailed scope.
 - As a minimum, you should implement a toggle button which will “start” and “stop” the timer **(E1)**, and a second button which will “reset” your stopwatch **(E2)**. A debounce strategy will be needed for the toggle function to work properly.
 
-![stopwatch with start/stop button and reset button](https://github.com/mxeng/mcp-docs/blob/master/labs/stopwatch.svg)
+![stopwatch with start/stop button and reset button](https://cdn.rawgit.com/mxeng/mcp-docs/58d989b29e79487f61872b26bb9f59bde3d672a8/labs/stopwatch.svg)
 
 Some factors to consider:
 - What precision will you record and display?

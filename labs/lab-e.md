@@ -8,7 +8,7 @@
 - Research how to configure and use hardware **timers** (section 17 of the ATmega datasheet: http://www.atmel.com/Images/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf).
 - Begin planning your program.
 
-** Task: Design a simple stop-watch, using the LCD display to show the elapsed time.**
+**Task: Design a simple stop-watch, using the LCD display to show the elapsed time.**
 - You should set up a hardware timer (e.g TIMER1) to time a suitable interval (say 1 or 10msec), and program variables to maintain counts of milliseconds, seconds and minutes. You will need to calculate suitable values for the prescaler and for the timer compare register.
 - Hardware interrupts should be used for button control.
 - This lab task is described in fairly broad terms. It is up to you to determine the detailed scope.

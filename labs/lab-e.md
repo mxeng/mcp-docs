@@ -12,7 +12,9 @@
 - You should set up a hardware timer (e.g TIMER1) to time a suitable interval (say 1 or 10msec), and program variables to maintain counts of milliseconds, seconds and minutes. You will need to calculate suitable values for the prescaler and for the timer compare register.
 - Hardware interrupts should be used for button control.
 - This lab task is described in fairly broad terms. It is up to you to determine the detailed scope.
-- As a minimum, you should implement a toggle button which will “start” and “stop” the timer **(E1)**, and a second button which will “reset” your stopwatch **(E2)**. A debounce strategy will be needed for the toggle function to work properly. 
+- As a minimum, you should implement a toggle button which will “start” and “stop” the timer **(E1)**, and a second button which will “reset” your stopwatch **(E2)**. A debounce strategy will be needed for the toggle function to work properly.
+
+![stopwatch with start/stop button and reset button](stopwatch.svg)
 
 Some factors to consider:
 - What precision will you record and display?

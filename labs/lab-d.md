@@ -5,7 +5,7 @@
 This lab requires some preparation. In order to complete the lab within the session some work beforehand is required.
 
 Before the lab:
-- Read the ULN2803 Darlington driver and the 2N3804 transistor specification sheets
+- Read the ULN2803 Darlington driver and the 2N3904 NPN transistor specification sheets
 - Read up on button-bounce, and consider ways of eliminating this problem.
 - Learn how to configure and use interrupts in AVR GCC. These tutorials are a good resource: http://www.fourwalledcubicle.com/AVRArticles.php
 - Review driving higher current loads, transistor amplifiers, Darlington

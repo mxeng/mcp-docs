@@ -19,3 +19,5 @@
 - Use a flowchart to outline the logic of your program **(F5)**
 - Show the PWM signals to a demonstrator on a CRO before applying it to any servo, making sure you have carefully checked the waveform frequency and pulse durations so that the servos cannot be damaged
 - There is an Arduino Servo library. Please do not use this, except as a last resort – it is not as flexible (particularly in resolution) as using timer PWM capability. As an extension exercise, you may adapt your program to use the Servo library and examine any performance differences.
+
+<p align="center"> <img src="https://cdn.sparkfun.com//assets/parts/8/3/0/8/11884-07.jpg" alt="RC Servo" width="30%"> </p>

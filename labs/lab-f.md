@@ -19,4 +19,3 @@
 - Explain how the timer control registers are configured in order to achieve your desired base period and range of movement. State clearly the safe operating range for your comparison register values. **(F4)**
 - Use a flowchart to outline the logic of your program **(F5)**
 - Show the PWM signals to a demonstrator on a CRO before applying it to any servo, making sure you have carefully checked the waveform frequency and pulse durations so that the servos cannot be damaged
-- There is an Arduino Servo library. Please do not use this, except as a last resort – it is not as flexible (particularly in resolution) as using timer PWM capability. As an extension exercise, you may adapt your program to use the Servo library and examine any performance differences.

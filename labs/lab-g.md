@@ -52,6 +52,7 @@ while(1)
 ```
 
 ### Multibyte Recieving:
+Don't forget to initialise your serial subsystems and to declare and initialise your variables.
 ```c
 //main loop
 while(1)
@@ -102,4 +103,3 @@ while(1)
 	}
 }
 ```
-Don't forget to initialise your serial subsystems and to declare and initialise your variables.

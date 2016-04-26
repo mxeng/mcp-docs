@@ -78,8 +78,14 @@ while(1)
 			case 3: //waiting for third parameter
 			temp_parameter_in_3 = serial_byte_in;
 			serial_fsm_state++;
+			case 4: //waiting for third parameter
+			temp_parameter_in_4 = serial_byte_in;
+			serial_fsm_state++;
+			case 5: //waiting for third parameter
+			temp_parameter_in_5 = serial_byte_in;
+			serial_fsm_state++;
 			break;
-			case 4: //waiting for stop byte
+			case 6: //waiting for stop byte
 			if(serial_byte_in == 254) //stop byte
 			{
 				// now that the stop byte has been received, we can process the whole message
@@ -87,6 +93,8 @@ while(1)
 				parameter_in_1 = temp_parameter_in_1;  // make sure you use meaningful variable names here! parameter_in_1 is a placeholder
 				parameter_in_2 = temp_parameter_in_2;
 				parameter_in_3 = temp_parameter_in_3;
+				parameter_in_4 = temp_parameter_in_4;
+				parameter_in_5 = temp_parameter_in_5;
 				
 				sprintf(serial_string, "1:%d, 2:%d, 3:%d\n", parameter_in_1, parameter_in_2, parameter_in_3);
 				serial0_print_string(serial_string);  // this is just debugging, printing to the USB serial to make sure the right messages are received

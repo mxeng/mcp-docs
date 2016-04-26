@@ -53,6 +53,7 @@ while(1)
 
 ### Multibyte Recieving:
 Don't forget to initialise your serial subsystems and to declare and initialise your variables.
+(An example is here: https://github.com/mxeng/mcp-docs/blob/master/labs/initialisation_example_for_coms.md)
 ```c
 //main loop
 while(1)

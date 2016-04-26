@@ -64,33 +64,40 @@ while(1)
 		
 		switch(serial_fsm_state) //switch by the current state
 		{
-			case 0:
-			//do nothing, if check after switch case will find start byte and set serial_fsm_state to 1
-			break;
-			case 1: //waiting for first parameter
+		case 0:
+		//do nothing, if check after switch case will find start byte and set serial_fsm_state to 1
+		break;
+		
+		case 1: //waiting for first parameter
 			temp_parameter_in_1 = serial_byte_in;
 			serial_fsm_state++;
-			break;
-			case 2: //waiting for second parameter
+		break;
+		
+		case 2: //waiting for second parameter
 			temp_parameter_in_2 = serial_byte_in;
 			serial_fsm_state++;
-			break;
-			case 3: //waiting for third parameter
+		break;
+		
+		case 3: //waiting for third parameter
 			temp_parameter_in_3 = serial_byte_in;
 			serial_fsm_state++;
-			case 4: //waiting for third parameter
+		break;
+		
+		case 4: //waiting for third parameter
 			temp_parameter_in_4 = serial_byte_in;
 			serial_fsm_state++;
-			case 5: //waiting for third parameter
+		break;
+		
+		case 5: //waiting for third parameter
 			temp_parameter_in_5 = serial_byte_in;
 			serial_fsm_state++;
-			break;
-			case 6: //waiting for stop byte
+		break;
+		
+		case 6: //waiting for stop byte
 			if(serial_byte_in == 254) //stop byte
 			{
 				// now that the stop byte has been received, we can process the whole message
-				
-				parameter_in_1 = temp_parameter_in_1;  // make sure you use meaningful variable names here! parameter_in_1 is a placeholder
+				parameter_in_1 = temp_parameter_in_1;
 				parameter_in_2 = temp_parameter_in_2;
 				parameter_in_3 = temp_parameter_in_3;
 				parameter_in_4 = temp_parameter_in_4;
@@ -99,15 +106,15 @@ while(1)
 				sprintf(serial_string, "1:%d, 2:%d, 3:%d\n", parameter_in_1, parameter_in_2, parameter_in_3);
 				serial0_print_string(serial_string);  // this is just debugging, printing to the USB serial to make sure the right messages are received
 				
-				//update controller based on new parameters here if you only want to run it after a new message
-				
+				//put your code to send back to the controller here if you want to do two way comms
 			} // if the stop byte is not received, there is an error, so no commands are implemented
 			serial_fsm_state = 0; //do nothing next time except check for start byte (below)
-			break;
+		break;
 		}
+		
 		if(serial_byte_in == 255) //if start byte is received
 		{
-			serial_fsm_state=1; //reset on 255
+			serial_fsm_state=1; //reset to waiting for first parameter state on 255
 		}
 	}
 }

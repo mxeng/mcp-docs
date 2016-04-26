@@ -102,3 +102,4 @@ while(1)
 	}
 }
 ```
+Don't forget to initialise your serial subsystems and to declare and initialise your variables.

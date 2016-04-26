@@ -106,12 +106,9 @@ while(1)
 ```
 
 ### To program your controller you will need different external tool commands. (because it's an ATMega1280 with a different bootloader). You will also have to press the reset button just before you program it.
-Title:
 
-```Flash ATmega1280 on COM6```
-Command:
+Title: ```Flash ATmega1280 on COM6```
 
-```"C:\Users\Public\Documents\Microcontroller Project\avrdude.exe"```
-Arguments:
+Command: ```"C:\Users\Public\Documents\Microcontroller Project\avrdude.exe"```
 
-```-C"C:\Program Files (x86)\Arduino\hardware\tools\avr\etc\avrdude.conf" -F -v -p atmega1280 -c arduino -P\\.\COM4 -b57600 -D -Uflash:w:"$(ProjectDir)Release\$(ItemFileName).hex":i```
+Arguments: ```-C"C:\Program Files (x86)\Arduino\hardware\tools\avr\etc\avrdude.conf" -F -v -p atmega1280 -c arduino -P\\.\COM4 -b57600 -D -Uflash:w:"$(ProjectDir)Release\$(ItemFileName).hex":i```

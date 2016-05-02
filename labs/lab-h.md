@@ -12,7 +12,7 @@
 Task:
 - Configure the L293 H-bridge circuit to control two motors with variable speed, and in both directions. You may choose your own configuration (i.e how to drive the direction and inhibit lines). Include a schematic/circuit diagram in your lab book. **(H1)**
 - Demonstrate the generation of two or four (as required) PWM signals with a calculated base frequency in the range 100-500Hz with duty cycle variable between 0 and 100%. Show on the
-oscilloscope, then use to drive the left and right robot motors. ****(H2)**
+oscilloscope, then use to drive the left and right robot motors. **(H2)**
 - Add motor control signals to your communication protocol for Lab G. Describe the full communication protocol in your lab book **(H3)**.
 - Show the calculations required to convert “forward” (0-1023) and “turnrate” (0-1023) joystick signals into suitable PWM comparison values for the left motor and right motor. **(H4)**
 - Demonstrate a working wireless robot drive system (Joystick->Xbee->H-bridge). **(H5)**

@@ -17,4 +17,4 @@ oscilloscope, then use to drive the left and right robot motors. **(H2)**
 - Show the calculations required to convert “forward” (0-1023) and “turnrate” (0-1023) joystick signals into suitable PWM comparison values for the left motor and right motor. **(H4)**
 - Demonstrate a working wireless robot drive system (Joystick->Xbee->H-bridge). **(H5)**
 
-<p align="center"> <img src="https://github.com/mxeng/mcp-docs/blob/master/labs/robot_drive.png" alt="stopwatch with start/stop button and reset button" width="30%"> </p>
+<p align="center"> <img src="https://github.com/mxeng/mcp-docs/blob/master/labs/robot_drive.png" alt="stopwatch with start/stop button and reset button" width="80%"> </p>

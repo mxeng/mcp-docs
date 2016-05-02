@@ -1,6 +1,6 @@
 # Mechatronic Project 234
 
-### Laboratory G: PWM for servo control
+### Laboratory G: Serial Communications
 
 **Before the lab**:
 - Ensure you have read the lecture notes on serial communication, PWM and servomotors

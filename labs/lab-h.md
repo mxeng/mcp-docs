@@ -7,7 +7,7 @@
 - Review the L293 H-bridge datasheet: http://www2.st.com/content/ccc/resource/technical/document/datasheet/04/ac/22/f9/20/5d/43/a1/CD00000059.pdf/files/CD00000059.pdf/jcr:content/translations/en.CD00000059.pdf
 - Review the PWM section of the ATmega2560 datasheet (section 17, p133): http://www.atmel.com/Images/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf
 - Plan your H-bridge configuration
-- **Be aware that you may be able to reuse your PWM config from your servos with just a small change to your top value**
+- **Be aware that you may be able to reuse your PWM config from your servos with just a small change to your top value.**
 
 Task:
 - Configure the L293 H-bridge circuit to control two motors with variable speed, and in both directions. You may choose your own configuration (i.e how to drive the direction and inhibit lines). Include a schematic/circuit diagram in your lab book. **(H1)**

@@ -4,7 +4,7 @@
 
 **Before the lab**:
 - Ensure you have read the lecture notes on PWM, H-bridges and motors: https://lms.curtin.edu.au/bbcswebdav/pid-2158837-dt-content-rid-22938419_1/courses/308824-Ux-061-01-Sxx-x1/lecture_07%285%29.pdf
-- Review the L293 H-bridge datasheet: http://www2.st.com/content/ccc/resource/technical/document/datasheet/04/ac/22/f9/20/5d/43/a1/CD00000059.pdf/files/CD00000059.pdf/jcr:content/translations/en.CD00000059.pdf
+- Review the L293 H-bridge datasheet: http://www.micropik.com/PDF/l293b.pdf
 - Review the PWM section of the ATmega2560 datasheet (section 17, p133): http://www.atmel.com/Images/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf
 - Plan your H-bridge configuration
 - **Be aware that you may be able to reuse your PWM config from your servos with just a small change to your top value.**

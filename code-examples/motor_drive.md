@@ -1,6 +1,6 @@
 If you think of the up axis on the joystick as the forwards component ```fc``` and the sideways axis as the turn right component ```rc```.
 
-![forwards component and right component](fc-rc.png)
+<p align="center"> <img src="fc-rc.png" alt="forwards component and right component" width="40%"> </p>
 
 We can turn this into motor speeds to drive the robot. Declare two 16 bit signed variables for the motor speeds ```lm``` and ```rm```:
 

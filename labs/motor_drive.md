@@ -24,8 +24,60 @@ lm = fc + rc;
 rm = fc - rc;
 ```
 
-Now, since we want the robot to stop moving when the joystick is centred we need to offset ```fc``` by ```253/2```. ```126``` is close enough:
+Now, since we want the robot to stop moving when the joystick is centred we need to offset ```fc``` by ```253/2```. ```126``` is close enough. We do the same for ```rc``` and our equations look like:
 ```c
-lm = (fc-126);
-rm = (fc-126);
+lm = (fc-126) + (rc-126);
+rm = (fc-126) - (rc-126);
 ```
+
+The math simplifies a bit, so you can implement it like this if you want:
+```c
+lm = fc + rc - 253;
+rm = fc - rc;
+```
+
+The speed of the motors is equal to the absolute value (```abs()```) of ```lm``` and ```rm``` and the direction is equal to the sign.
+
+If we wire our H-bridge up so that the PWM goes to the enable lines and the direction lines are connected to any GPIO pins we can control our robot quite easily.
+
+For the following wiring:
+```
+EnA: OC3A
+In1: A0
+In2: A1
+EnB: OCRB
+In3: A2
+In4: A3
+Out1, Out2: left motor
+Out3, Out4: right motor
+```
+and assuming a top value of 10000. We can set the speed and direction like this:
+```c
+OC3A = (int32_t)abs(lm)*10000/126; //lm speed from magnitude of lm
+OC3B = (int32_t)abs(rm)*10000/126; //lm speed from magnitude of rm
+
+if(lm>=0) //if lm is positive
+{
+  //set direction forwards
+  PORTA |= (1<<0);
+  PORTB &= ~(1<<1);
+}
+else
+{
+  //set direction reverse
+  PORTA &= ~(1<<0);
+  PORTA |= (1<<1);
+}
+
+if(rm>=0) //if rm is positive
+{
+  //set direction forwards
+  PORTA |= (1<<2);
+  PORTB &= ~(1<<3);
+}
+else
+{
+  //set direction reverse
+  PORTA &= ~(1<<2);
+  PORTA |= (1<<3);
+}

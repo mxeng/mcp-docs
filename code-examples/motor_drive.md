@@ -55,8 +55,8 @@ Out3, Out4: right motor
 ```
 and assuming a top value of 10000. We can set the speed and direction like this:
 ```c
-OC3A = (int32_t)abs(lm)*10000/126; //lm speed from magnitude of lm
-OC3B = (int32_t)abs(rm)*10000/126; //lm speed from magnitude of rm
+OCR3A = (int32_t)abs(lm)*10000/126; //lm speed from magnitude of lm
+OC3RB = (int32_t)abs(rm)*10000/126; //lm speed from magnitude of rm
 
 if(lm>=0) //if lm is positive
 {

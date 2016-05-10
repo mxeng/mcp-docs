@@ -2,14 +2,14 @@ If you think of the up axis on the joystick as the forwards component ```fc``` a
 
 <p align="center"> <img src="fc-rc.png" alt="forwards component and right component" width="30%"> </p>
 
-We can turn this into motor speeds to drive the robot. Declare two 16 bit signed variables for the motor speeds ```lm``` and ```rm```:
-
+We can turn this into motor speeds to drive the robot. Declare two 16 bit signed variables for the motor speeds ```lm``` and ```rm```.
 ```c
 static int16_t lm = 0;
 static int16_t rm = 0;
 ```
+The variables must be signed because they will sometimes be positive and sometimes be negative. When lm is positive the left motor will be driving forwards, and when lm is negative the left motor will be driving in reverse (same for ```rm``` and the right motor).
 
-When lm is positive the left motor will be driving forwards, and when lm is negative the left motor will be driving in reverse (same for ```rm``` and the right motor).
+
 
 When we push up on the joystick, ```fc``` will increase and we want both motors to go forwards, so ```lm``` and ```rm``` will depend on ```fc```.
 Something like this:

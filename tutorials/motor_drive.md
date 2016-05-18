@@ -40,7 +40,7 @@ rm = fc - rc;
 
 The speed of the motors is equal to the absolute value (```abs()```) of ```lm``` and ```rm``` and the direction is equal to the sign.
 
-If we wire our H-bridge up so that the PWM goes to the enable lines and the direction lines are connected to any GPIO pins we can control our robot quite easily.
+If we wire our H-bridge up so that the PWM goes to the enable lines and the direction lines are connected to any GPIO pins we can control our robot quite easily. PWM mode 8 is reccomended.
 
 For the following wiring:
 ```

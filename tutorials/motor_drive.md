@@ -83,3 +83,5 @@ else
   PORTA &= ~(1<<PA2);
   PORTA |= (1<<PA3);
 }
+````
+Note that the values in OCR1A and OCR1B will exceed the TOP value. This won't cause problems in PWM mode 8 but will in mode 10.

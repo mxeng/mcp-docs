@@ -75,7 +75,7 @@ if(rm>=0) //if rm is positive
 {
   //set direction forwards
   PORTA |= (1<<PA2);
-  PORTB &= ~(1<<PA3);
+  PORTA &= ~(1<<PA3);
 }
 else
 {

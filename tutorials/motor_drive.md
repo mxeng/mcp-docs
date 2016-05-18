@@ -61,25 +61,25 @@ OC3RB = (int32_t)abs(rm)*10000/126; //lm speed from magnitude of rm
 if(lm>=0) //if lm is positive
 {
   //set direction forwards
-  PORTA |= (1<<0);
-  PORTB &= ~(1<<1);
+  PORTA |= (1<<PA0);
+  PORTB &= ~(1<<PA1);
 }
 else
 {
   //set direction reverse
-  PORTA &= ~(1<<0);
-  PORTA |= (1<<1);
+  PORTA &= ~(1<<PA0);
+  PORTA |= (1<<PA1);
 }
 
 if(rm>=0) //if rm is positive
 {
   //set direction forwards
-  PORTA |= (1<<2);
-  PORTB &= ~(1<<3);
+  PORTA |= (1<<PA2);
+  PORTB &= ~(1<<PA3);
 }
 else
 {
   //set direction reverse
-  PORTA &= ~(1<<2);
-  PORTA |= (1<<3);
+  PORTA &= ~(1<<PA2);
+  PORTA |= (1<<PA3);
 }

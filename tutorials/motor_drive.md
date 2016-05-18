@@ -85,3 +85,8 @@ else
 }
 ````
 Note that the values in OCR1A and OCR1B will exceed the TOP value. This won't cause problems in PWM mode 8 but will in mode 10.
+
+You will also need to set the DDR bits for the direction control lines:
+```c
+DDRA |= (1<<DDA0)|(1<<DDA1)|(1<<DDA2)|(1<<DDA3); //put A0-A3 into low impedance output mode
+```

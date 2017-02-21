@@ -20,10 +20,11 @@ int main(void)
   PORTA = leds; 
   while(1)//main loop
   {
+    _delay_ms(500);     //500 millisecond delay
+    PORTA |= (1<<PA3);  // note here PA3 is just an alias for the number 3
+                        // this line is equivalent to PORTA = PORTA | 0b00001000   which writes a HIGH to pin 3 of PORTA
     _delay_ms(500); 
-    //500 millisecond delay
-    leds = leds + 1; 
-    PORTA = leds; //write leds to port A
+    PORTA &= ~(1<<PA3); // this line is equivalent to PORTA = PORTA & (0b11110111)  which writes a HIGH to pin 3 of PORTA
   }
   return(1);
 }//end main 
@@ -38,11 +39,11 @@ int main(void)
 
 4. Power up the board, and observe the results.
 
-5. Describe the program functionality in your logbook.  **(A2)**
+5. Describe the program functionality in your logbook. How is the written pin specified? What would happen if the "|" symbol was omitted in line 24. What would happen if the & symbol was ommitted in line 27? (hint: try it!) **(A2)**
 
-6. Modify your program so that the LEDs are lit one at a time in sequence from left to right and then from right to left. **(A3)**
+6. Modify your program so that pins 2 and 5 of PORTA (pins 28 and 25 respectively) are blinked in sequence. **(A3)**
 
-7. Use the microcontroller to drive the LEDs in an interesting pattern.  **(A4)**
+7. Modify your program so that the LEDs are lit one at a time in sequence from left to right and then from right to left. **(A4)**
 
 8. Locate the pins on the Arduino that correspond to Ports A,B,C,K,L (all digital pins)
 

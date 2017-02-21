@@ -39,7 +39,7 @@ int main(void)
 
 4. Power up the board, and observe the results.
 
-5. Describe the program functionality in your logbook. How is the written pin specified? What would happen if the "|" symbol was omitted in line 24. What would happen if the & symbol was ommitted in line 27? (hint: try it!) **(A2)**
+5. Describe the program functionality in your logbook. How is the written pin specified? What would happen if the | symbol was omitted in line 24? What would happen if the & symbol was ommitted in line 27? (hint: try it!) **(A2)**
 
 6. Modify your program so that pins 2 and 5 of PORTA (pins 28 and 25 respectively) are blinked in sequence. **(A3)**
 

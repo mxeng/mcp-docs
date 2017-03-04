@@ -6,10 +6,18 @@ ADC stands for Analogue to Digital Converter.  It is an interface which converts
 
 The ATmega can read up to 16 different analogue voltages (using the Port F & Port K pins).
 
-In addition, the ADC requires two reference voltages.  AREF is the maximum measured voltage (that is, the voltage which will return the largest digital output), while AGND is the minimum measured voltage (often 0V, connected to the GND pin on the ATmega1280).  AVCC is the ADC power supply, and will usually be simply the same 5V power supply as the VCC pin on the ATmega1280/2560.
+In addition, the ADC requires two reference voltages.  AREF is the maximum measured voltage (that is, the voltage which will return the largest digital output), while AGND is the minimum measured voltage (often 0V, connected to the GND pin on the ATmega2560).  AVCC is the ADC power supply, and will usually be simply the same 5V power supply as the VCC pin.
 
-You will need the following command to initialise the ADC on the ATmega:
+The ADC on the ATmega2560 is manipulated using specific ADC registers, which are described in the ATmega2560 datasheet. 
+Some framework code has been provided for you (in the files adc.c and adc.h), to make dealing with the ADC a little simpler, however you may wish to examine adc.c and the datasheet to see exactly how this works.
 
+You will need to firstly ensure the header file adc.h is #included in your project header file (probably Robot.h):
+
+```c
+#include "../adc.h" //minimal adc lib
+```
+
+The following command will initialise the ADC on the ATmega:
 ```c
 adc_init(); //initialse ADC
 _delay_ms(20); //it's a good idea to wait a bit after your init section

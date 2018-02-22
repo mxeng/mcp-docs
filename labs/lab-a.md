@@ -1,4 +1,4 @@
-# Mechatronic Project 234
+# MXEN2002 Mechatronic Microcontroller Project
 
 ### Laboratory A:  Downloading to the microcontroller, driving LEDs
 

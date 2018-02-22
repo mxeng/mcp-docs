@@ -1,6 +1,6 @@
-#Mechatronic Microcontroller Project MXEN2002
+# Mechatronic Microcontroller Project MXEN2002
 
-###Laboratory B:  Digital and analogue inputs and the ADC
+### Laboratory B:  Digital and analogue inputs and the ADC
 
 ADC stands for Analogue to Digital Converter.  It is an interface which converts an analogue voltage (e.g 0-5V) into a digital signal (e.g an 8-bit or 10-bit number).  An ADC is essential if you wish to be able to process analogue signals with your Microcontroller.
 

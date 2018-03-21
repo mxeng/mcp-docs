@@ -16,7 +16,7 @@ microcontroller. We will use a 12V lamp and a 12V DC motor as output loads.
 
 Lab tasks:
 
-1. Design an output driver circuit which will power a 12V, 300mA lamp using the 2N3804 transistor. Draw a circuit diagram, and verify that the current at the Microcontroller terminals are safe. **(D1)**
+1. Design an output driver circuit which will power a 12V, 300mA lamp using the 2N3904 transistor. Draw a circuit diagram, and verify that the current at the Microcontroller terminals are safe. **(D1)**
 2. Write a program to blink the lamp on and off approximately twice per second.
 3. Collect a 12V lamp, and implement your design. **(D2)**
 4. Modify your output circuit to use the Darlington driver instead of the transistor. **(D3)**

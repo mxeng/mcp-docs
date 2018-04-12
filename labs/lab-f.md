@@ -10,7 +10,7 @@
 ### Task:
 - Establish control over two servos, using two independent PWM signals produced by one or two of the microcontroller timers.
 - Control servo 1 by position smoothly through the maximum horizontal range. The position of the servo should be in response to position of the analog joystick. **(F1)**
-- Control servo 2 by velocity smoothly through the maximum horizontal range. The speed of the servo should be in response to the position of the analog joystick. **(F2)**
+- Control servo 2 by velocity smoothly through the maximum vertical range. The speed of the servo should be in response to the position of the analog joystick. **(F2)**
 
 
 <p align="center"> <img src="https://cdn.sparkfun.com//assets/parts/8/3/0/8/11884-07.jpg" alt="RC Servo" width="30%"> </p>

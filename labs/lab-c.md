@@ -23,3 +23,6 @@ Some factors to consider:
 - Flowcharts showing the program logic **(C3)**
 - A clear summary of all calibration tests and resulting model to be used in code. **(C4)**
 - A graph showing the results of your calibration **(C5)**
+
+### Useful links:
+- https://en.cppreference.com/w/cpp/io/c/fprintf

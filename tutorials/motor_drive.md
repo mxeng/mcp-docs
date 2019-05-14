@@ -47,7 +47,7 @@ For the following wiring:
 EnA: OC3A
 In1: A0
 In2: A1
-EnB: OCRB
+EnB: OC3B
 In3: A2
 In4: A3
 Out1, Out2: left motor
@@ -56,7 +56,7 @@ Out3, Out4: right motor
 and assuming a top value of 10000. We can set the speed and direction like this:
 ```c
 OCR3A = (int32_t)abs(lm)*10000/126; //lm speed from magnitude of lm
-OC3RB = (int32_t)abs(rm)*10000/126; //lm speed from magnitude of rm
+OCR3B = (int32_t)abs(rm)*10000/126; //lm speed from magnitude of rm
 
 if(lm>=0) //if lm is positive
 {

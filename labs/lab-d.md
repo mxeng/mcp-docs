@@ -1,6 +1,6 @@
 # Mechatronic Microcontroller Project
 
-###Laboratory D: Driving a higher current load
+### Laboratory D: Driving a higher current load
 
 This lab requires some preparation. In order to complete the lab within the session some work beforehand is required.
 

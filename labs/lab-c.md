@@ -1,6 +1,6 @@
 # Mechatronic Microcontroller Project MXEN2002
 
-###Laboratory C:  Range sensor calibration and the LCD
+### Laboratory C:  Range sensor calibration and the LCD
 
 **Before the lab:**
 - **Review the “LiquidCrystal” Library in your provided framework code**

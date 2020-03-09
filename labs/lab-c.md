@@ -3,7 +3,7 @@
 ### Laboratory C:  Range sensor calibration and the LCD
 
 **Before the lab:**
-- **Review the “LiquidCrystal” Library in your provided framework code**
+- **Review the “hd44780” Library in your provided framework code**
 - **Review analog input**
 - **Begin coding your program**
 

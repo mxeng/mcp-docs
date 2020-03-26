@@ -46,7 +46,8 @@ int main( void )
   while(1)
   {
     //code that calculates what numbers to show on the stopwatch
-    //use sprintf, same as creating a string as seen in the LCD lab, but include \n (newline character) at the end of the string format
+    //use sprintf, same as creating a string as seen in the LCD lab
+    //include \r (carriage return character) at the end of the string format
     
     //may want some code to slow the rate of communication. High likelihood of spam.
     serial0_print_string(stopwatch_string);

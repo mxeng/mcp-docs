@@ -6,6 +6,7 @@
 - Review the use of harware interrupts.
 - Research how to configure and use hardware **timers** (section 17 of the ATmega datasheet: http://www.atmel.com/Images/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf).
 - Begin planning your program.
+- Attend/Review Lecture 5 for examples of timer configuration and usage.
 
 **Task: Design a simple stop-watch, using a serial monitor on PC to show the elapsed time.**
 - You should set up a hardware timer (e.g TIMER1) to time a suitable interval (say 1 or 10msec), and program variables to maintain counts of milliseconds, seconds and minutes. You will need to calculate suitable values for the prescaler and for the timer compare register.
@@ -27,11 +28,11 @@ Your documentation should include:
 - Some pseudocode or flowcharts (preferred) showing the implementation of the logic. **(E5)**
 - A description of any tests conducted to verify functionality. 
 
-Marks E1 and E2 should be submitted as a short video if it is possible to show your display and can clearly see you pressing the toggle buttons and affecting the stopwatch appropriately. Otherwise submit a screenshot of serial monitor output, preferably adding lines of code that print across serial when buttons are pressed so we can clearly see your software has detected a button press and is reacting accordingly.
+Marks E1 and E2 should be submitted as a short video if it is possible to show your display and can clearly see you pressing the toggle buttons and affecting the stopwatch appropriately. Otherwise adapt your code to use a serial monitor on PC and submit enough screenshots to demonstrate the performance, preferably adding lines of code that print across serial when buttons are pressed so it can be clearly seen that your software has detected a button press and is reacting accordingly.
 
 E3 to E5 should be submitted as photos or scans of your lab book with your student card either visible in photo or scanned in front of the page so it can be seen as one scanned image. This is necessary to show evidence that the documentation is your own work.
 
-Example code below demonstrates how to use serial 0 to print messages to the computer. Note you will need to write an appropraite sprintf to store the correct message in stopwatch_string (as well as timer code, external interrupt code, and more). Serial 0 is connected to the USB connector, no additional wires are necessary to facilitate arduino to PC communication.
+For those without an LCD screen the example code below demonstrates how to use serial 0 to print messages to the computer. Note you will need to write an appropraite sprintf to store the correct message in stopwatch_string (as well as timer code, external interrupt code, and more). Serial 0 is connected to the USB connector, no additional wires are necessary to facilitate arduino to PC communication. An up-to-date executable serial monitor can be found on Piazza. Alternatives include PuTTY using 'Connection Type' Serial and the correct COM port, or using the Arduino IDE Serial Monitor.
 ```c
 //#includes not shown. dont delete them from your file
 

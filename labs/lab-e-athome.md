@@ -8,7 +8,7 @@
 - Begin planning your program.
 - Attend/Review Lecture 5 for examples of timer configuration and usage.
 
-**Task: Design a simple stop-watch, using a serial monitor on PC to show the elapsed time.**
+**Task: Design a simple stop-watch, using an LCD screen or serial monitor on PC to show the elapsed time.**
 - You should set up a hardware timer (e.g TIMER1) to time a suitable interval (say 1 or 10msec), and program variables to maintain counts of milliseconds, seconds and minutes. You will need to calculate suitable values for the prescaler and for the timer compare register.
 - Hardware interrupts should be used for button control.
 - This lab task is described in fairly broad terms. It is up to you to determine the detailed scope.

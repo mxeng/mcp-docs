@@ -13,7 +13,7 @@
 - Control servo 2 by velocity smoothly through the maximum vertical range. The speed of the servo should be in response to the position of the analog joystick. **(F2)**
 
 
-<p align="center"> <img src="https://cdn.sparkfun.com//assets/parts/8/3/0/8/11884-07.jpg" alt="RC Servo" width="30%"> </p>
+<p align="center"> <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Two_hobby_servo_motors.jpg" alt="RC Servos" width="30%"> </p>
 
 ### Note:
 - Show the calculations for the PWM base frequency and duty cycle in your lab book **(F3)**

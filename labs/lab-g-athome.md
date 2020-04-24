@@ -16,4 +16,4 @@ Task:
 - Show the calculations for the base frequency of the motor, and for converting joystick digital value into suitable direction and comparison values. **(G4)**
 - Show a well structured and commented C program. **(G5)**
 
-<p align="center"> <img src="https://github.com/mxeng/mcp-docs/blob/master/labs/robot_drive.png" alt="stopwatch with start/stop button and reset button" width="80%"> </p>
+

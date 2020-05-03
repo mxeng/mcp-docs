@@ -16,10 +16,10 @@ Task:
 - Change your communication protocol to send the two joystick channels in the two message bytes. Note that the values will need to be scaled, as the ADC will give you a 10 bit number (0-1023) while the communication protocol requires a value from 0-253. Explain the communication protocol in your lab book. **(H2)**
 - Verify you can read these values correctly on the serial terminal. **(H3)**
 - Mix the joystick values to produce a differential drive: 
--- joystick forward should result in left motor forward and right motor forward
--- joystick back should result in left motor back and right motor back
--- joystick left should result in left motor back and right motor forward
--- joystid right should result in left motor forward and right motor back
+  - joystick forward should result in left motor forward and right motor forward
+  - joystick back should result in left motor back and right motor back
+  - joystick left should result in left motor back and right motor forward
+  - joystid right should result in left motor forward and right motor back
 - Show the calculations required to convert the two joystick signals into suitable PWM comparison and direction values for the left motor and right motor. **(H4)**
 - Demonstrate a working differential drive system with smooth control of both motors (with one motor, demonstrate both sides of the H bridge chip. **(H5)**
 

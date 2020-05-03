@@ -10,7 +10,9 @@
 
 
 Task:
+- Using a short piece of hookup wire, connect the RX2 and TX2 pins of your microcontroller together.
 - Compile and upload the communication sample file as controller.c, verify that the communication works as expected using the serial terminal. **(H1)**
+- This is showing how microcontroller to microcontroller communication can be implemented. Because you only have one Arduino at home, you are sending and receiving from the same microcontroller. But if you have two, you can connect RX2 of one to TX2 of the other, and vice-versa to communicate between the two devices. In the lab, we would use Xbee wireless modules to implement wireless communication between two microcontrollers.
 - Change your communication protocol to send the two joystick channels in the two message bytes. Note that the values will need to be scaled, as the ADC will give you a 10 bit number (0-1023) while the communication protocol requires a value from 0-253. Explain the communication protocol in your lab book. **(H2)**
 - Verify you can read these values correctly on the serial terminal. **(H3)**
 - Mix the joystick values to produce a differential drive: 

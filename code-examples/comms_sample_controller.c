@@ -8,21 +8,17 @@
 //file scope variables
 static char serial_string[200] = {0};
 
-
-
 int main(void)
 {
 	// initialisation
 	serial0_init(); 	// terminal communication with PC
 	serial2_init();		// microcontroller communication to/from another Arduino 
-						// or loopback communication to same Arduino
-	
+				// or loopback communication to same Arduino
 	
 	milliseconds_init();
-	adc_init();
 	
 	uint8_t sendDataByte1=0, sendDataByte2=0;		// data bytes sent
-	uint8_t recvDataByte1=0, recvDataByte1=0;		// data bytes received
+	uint8_t recvDataByte1=0, recvDataByte2=0;		// data bytes received
 	
 	uint32_t current_ms=0, last_send_ms=0;			// used for timing the serial send
 	
@@ -31,8 +27,6 @@ int main(void)
 	while(1)
 	{
 		current_ms = milliseconds;
-		
-				
 		//sending section
 		if(current_ms-last_send_ms >= 100) //sending rate controlled here one message every 100ms (10Hz)
 		{	
@@ -66,25 +60,24 @@ int main(void)
 				//do nothing, if check after switch case will find start byte and set serial_fsm_state to 1
 				break;
 				case 1: //waiting for first parameter
-				recvDataByte1 = serial_byte_in;
-				serial_fsm_state++;
+					recvDataByte1 = serial_byte_in;
+					serial_fsm_state++;
 				break;
 				case 2: //waiting for second parameter
-				recvDataByte2 = serial_byte_in;
-				serial_fsm_state++;
+					recvDataByte2 = serial_byte_in;
+					serial_fsm_state++;
 				break;
 				case 3: //waiting for stop byte
-				if(serial_byte_in == 0xFE) //stop byte
-				{
-					// now that the stop byte has been received, we can process the whole message
-					// the code in this section will implement the result of your message					
-							
-					
-					sprintf(serial_string, "received: 1:%4d, 2:%4d \n", recvDataByte1, recvDataByte2);
-					serial0_print_string(serial_string);  // print the received bytes to the USB serial to make sure the right messages are received				
-				} 
-				// if the stop byte is not received, there is an error, so no commands are implemented
-				serial_fsm_state = 0; //do nothing next time except check for start byte (below)
+					if(serial_byte_in == 0xFE) //stop byte
+					{
+						// now that the stop byte has been received, we can process the whole message
+						// the code in this section will implement the result of your message
+
+						sprintf(serial_string, "received: 1:%4d, 2:%4d \n", recvDataByte1, recvDataByte2);
+						serial0_print_string(serial_string);  // print the received bytes to the USB serial to make sure the right messages are received				
+					} 
+					// if the stop byte is not received, there is an error, so no commands are implemented
+					serial_fsm_state = 0; //do nothing next time except check for start byte (below)
 				break;
 			}
 			if(serial_byte_in == 0xFF) //if start byte is received, we go back to expecting the first data byte

@@ -19,7 +19,7 @@ Task:
   - joystick forward should result in left motor forward and right motor forward
   - joystick back should result in left motor back and right motor back
   - joystick left should result in left motor back and right motor forward
-  - joystid right should result in left motor forward and right motor back
+  - joystick right should result in left motor forward and right motor back
 - Show the calculations required to convert the two joystick signals into suitable PWM comparison and direction values for the left motor and right motor. **(H4)**
 - Demonstrate a working differential drive system with smooth control of both motors (with one motor, demonstrate both sides of the H bridge chip. **(H5)**
 

@@ -1,6 +1,5 @@
 //include this .c file's header file
 #include "Controller.h"
-#define SERIAL_BUFFER_SIZE 64
 
 //static function prototypes, functions only called in this file
 

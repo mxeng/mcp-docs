@@ -12,12 +12,11 @@ Preliminary reading and reference material:
 The aim of this laboratory session is to familiarise yourselves with the equipment and software that we will be using for the rest of semester.  By the end of the session, you should have confirmed that the Microcontroller, kit board and development environment are all working correctly, and you should have practiced modifying, compiling, and downloading code to the ATMEGA in order to drive some output LEDs.
 
 ```c
-static uint8_t leds = 0x00;
 
 int main(void)
 {
   DDRA = 0xFF;//put PORTA into output mode
-  PORTA = leds; 
+  PORTA = 0; 
   while(1)//main loop
   {
     _delay_ms(500);     //500 millisecond delay

@@ -1,5 +1,5 @@
 # Input
-By reading the value of the ```PINy``` registries we can do input on the microcontroller. We can also use the ADC to read continuously variable voltages.
+By reading the value of the ```PINy``` registries we can do input on the microcontroller. We can also use the Analog-Digital-Converter (ADC) to read continuously variable voltages.
 
 #### Putting a pin or a port into input mode
 The microcontroller's ports default to high impedance output mode when it is reset or powered on (it's safer becuase the pins are protected from shorts), but we don't want to rely on this becuase previous code (either ours or a dodgey bootloader) might have put some pins into output mode.
@@ -12,7 +12,7 @@ DDRA &= ~((1<<DDA0)|(1<<DDA1); //just A0 and A1 in high impedance input mode
 
 
 #### Wiring a switch
-A switch needs to be wired so that it is in a defined state when it is pressed and also when it is not pressed. Usually either a pull up or pull down resistor is used for this task as seen in the schematic below.
+A switch needs to be wired so that it is in a defined state when it is pressed and also when it is not pressed. Usually either a pull up or pull down resistor is used for this task. In the schematic below is an example circuit of a switch with pull up resistor, a switch with pull down resistor, and a potentiometer wired to give a variable voltage to an ADC.
 
 <p align="center"> <img src="https://cdn.rawgit.com/mxeng/mcp-docs/1e6ea90f8f955fa6812864f90941af543fb00d82/schematics/input_and_adc.svg" alt="Schematic showing a switch wiring in a pull-up and pull-down configuration and a potentiometer wired to an ADC channel" width="90%"> </p>
 

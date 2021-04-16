@@ -1,4 +1,4 @@
-# Mechatronic Project 234
+# Mechatronic Microcontroller Project MXEN2002
 
 ### Laboratory H: Motor Control
 

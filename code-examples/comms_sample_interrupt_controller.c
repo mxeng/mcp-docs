@@ -6,8 +6,7 @@
 
 //file scope variables
 static char serial_string[200] = {0};
-volatile uint8_t recvDataByte1=0, recvDataByte2=0, recvDataByte3=0, recvDataByte4=0;		// data bytes received
-uint8_t serial_fsm_state=0;									// used in the serial receive ISR
+volatile uint8_t dataByte1=0, dataByte2=0, dataByte3=0, dataByte4=0;		// data bytes received
 volatile bool new_message_received_flag=false;
 
 
@@ -18,14 +17,14 @@ int main(void)
 	serial2_init();		// microcontroller communication to/from another Arduino
 	// or loopback communication to same Arduino
 	
-	milliseconds_init();
-	
 	uint8_t sendDataByte1=0, sendDataByte2=0, sendDataByte3=0, sendDataByte4=0;		// data bytes sent
 	
 	uint32_t current_ms=0, last_send_ms=0;			// used for timing the serial send
 	
 	UCSR2B |= (1 << RXCIE2); // Enable the USART Receive Complete interrupt (USART_RXC)
-
+	
+	milliseconds_init();
+	sei();
 	
 	while(1)
 	{
@@ -65,7 +64,7 @@ int main(void)
 		{
 			// now that a full message has been received, we can process the whole message
 			// the code in this section will implement the result of your message
-			sprintf(serial_string, "received: 1:%4d, 2:%4d , 3:%4d , 4:%4d \n", recvDataByte1, recvDataByte2, recvDataByte3, recvDataByte4);
+			sprintf(serial_string, "received: 1:%4d, 2:%4d , 3:%4d , 4:%4d \n", dataByte1, dataByte2, dataByte3, dataByte4);
 			serial0_print_string(serial_string);  // print the received bytes to the USB serial to make sure the right messages are received
 
 			new_message_received_flag=false;	// set the flag back to false
@@ -77,6 +76,8 @@ int main(void)
 
 ISR(USART2_RX_vect)  // ISR executed whenever a new byte is available in the serial buffer
 {
+	static uint8_t recvByte1=0, recvByte2=0, recvByte3=0, recvByte4=0;		// data bytes received
+	static uint8_t serial_fsm_state=0;									// used in the serial receive ISR
 	uint8_t	serial_byte_in = UDR2; //move serial byte into variable
 	
 	switch(serial_fsm_state) //switch by the current state
@@ -85,19 +86,19 @@ ISR(USART2_RX_vect)  // ISR executed whenever a new byte is available in the ser
 		//do nothing, if check after switch case will find start byte and set serial_fsm_state to 1
 		break;
 		case 1: //waiting for first parameter
-		recvDataByte1 = serial_byte_in;
+		recvByte1 = serial_byte_in;
 		serial_fsm_state++;
 		break;
 		case 2: //waiting for second parameter
-		recvDataByte2 = serial_byte_in;
+		recvByte2 = serial_byte_in;
 		serial_fsm_state++;
 		break;
 		case 3: //waiting for second parameter
-		recvDataByte3 = serial_byte_in;
+		recvByte3 = serial_byte_in;
 		serial_fsm_state++;
 		break;
 		case 4: //waiting for second parameter
-		recvDataByte4 = serial_byte_in;
+		recvByte4 = serial_byte_in;
 		serial_fsm_state++;
 		break;
 		case 5: //waiting for stop byte
@@ -105,6 +106,11 @@ ISR(USART2_RX_vect)  // ISR executed whenever a new byte is available in the ser
 		{
 			// now that the stop byte has been received, set a flag so that the
 			// main loop can execute the results of the message
+			dataByte1 = recByte1;
+			dataByte2 = recByte2;
+			dataByte3 = recByte3;
+			dataByte4 = recByte4;
+			
 			new_message_received_flag=true;
 		}
 		// if the stop byte is not received, there is an error, so no commands are implemented

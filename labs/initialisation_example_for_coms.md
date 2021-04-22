@@ -31,4 +31,8 @@ int main(void)
 	milliseconds_init(); //initialise timer one to track milliseconds
 	//Additional code to configure timer registers etc to produce appropriate PWMs
 	_delay_ms(10); //short delay
+	
+	while(1)
+	{
+		//etc
 ```

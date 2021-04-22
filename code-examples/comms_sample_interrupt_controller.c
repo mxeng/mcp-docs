@@ -6,9 +6,9 @@
 
 //file scope variables
 static char serial_string[200] = {0};
-uint8_t recvDataByte1=0, recvDataByte2=0, recvDataByte3=0, recvDataByte4=0;		// data bytes received
+volatile uint8_t recvDataByte1=0, recvDataByte2=0, recvDataByte3=0, recvDataByte4=0;		// data bytes received
 uint8_t serial_fsm_state=0;									// used in the serial receive ISR
-bool new_message_received_flag=false;
+volatile bool new_message_received_flag=false;
 
 
 int main(void)

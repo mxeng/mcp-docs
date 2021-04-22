@@ -106,10 +106,10 @@ ISR(USART2_RX_vect)  // ISR executed whenever a new byte is available in the ser
 		{
 			// now that the stop byte has been received, set a flag so that the
 			// main loop can execute the results of the message
-			dataByte1 = recByte1;
-			dataByte2 = recByte2;
-			dataByte3 = recByte3;
-			dataByte4 = recByte4;
+			dataByte1 = recvByte1;
+			dataByte2 = recvByte2;
+			dataByte3 = recvByte3;
+			dataByte4 = recvByte4;
 			
 			new_message_received_flag=true;
 		}

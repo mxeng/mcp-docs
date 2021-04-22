@@ -29,6 +29,6 @@ int main(void)
 	serial1_init(); //initialise serial1 subsystem
 	adc_init(); //initialse ADC
 	milliseconds_init(); //initialise timer one to track milliseconds
-	motors_init(); //initialise motors, DDRs & PWM
+	//Additional code to configure timer registers etc to produce appropriate PWMs
 	_delay_ms(10); //short delay
 ```

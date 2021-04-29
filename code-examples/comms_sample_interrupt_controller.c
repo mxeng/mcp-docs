@@ -34,18 +34,23 @@ int main(void)
 		{
 			// this is just incrementing variables to send for testing purposes
 			// you will put the code here that puts the message you want to send into sendDataByte1 and sendDataByte2
-			sendDataByte1++;
-			sendDataByte2+=2;
-			sendDataByte3+=3;
-			sendDataByte4+=4;
-			if (sendDataByte1>253)
+			sendDataByte1++; //increments byte 1 by 1 every send
+			if (sendDataByte1>253) //Causes byte 1 to wrap back to 0 when exceeding 253
 			sendDataByte1 = 0;
+			
+			sendDataByte2+=2; //increments byte 2 by 2 every send
 			if (sendDataByte2>253)
 			sendDataByte2 = 0;
+			
+			sendDataByte3+=3; //increments byte 3 by 3 every send
 			if (sendDataByte3>253)
 			sendDataByte3 = 0;
+			
+			sendDataByte4+=4; //increments byte 4 by 4 every send
 			if (sendDataByte4>253)
 			sendDataByte4 = 0;
+			//You should replace the above data byte code with your own definitions
+			//or calculations of what should be sent in the bytes
 			
 			// you can add additional bytes to send in the message,
 			//but make sure the receiving code is expecting the right number of bytes

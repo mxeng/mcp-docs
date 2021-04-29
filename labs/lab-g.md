@@ -93,7 +93,8 @@ do not occur, and that latency is minimised. **(G4)**
 	}
 ```
 
-The above examples can be found incorporated into a full interrupt driven script for comms at:
+### Full Example:
+The above code snippets can be found incorporated into a full interrupt driven script for comms at:
 https://github.com/mxeng/mcp-docs/blob/master/code-examples/comms_sample_interrupt_controller.c
 
-Note if using the code in that example on the Robot portion of the project, replace #include "Controller.h" with #include "Robot.h"
+Note if using the code in that example for the Robot (i.e. programming in Robot.c), replace #include "Controller.h" with #include "Robot.h"

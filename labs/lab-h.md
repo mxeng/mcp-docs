@@ -7,6 +7,8 @@
 - Review the L293 H-bridge datasheet: http://www.micropik.com/PDF/l293b.pdf
 - Review the PWM section of the ATmega2560 datasheet (section 17, p133): http://www.atmel.com/Images/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf
 - Plan your H-bridge configuration
+- Review example for motor drive logic: https://github.com/mxeng/mcp-docs/blob/master/tutorials/motor_drive.md
+- Plan changes to motor drive example if making use of code snippets within
 - **Be aware that you may be able to reuse your PWM config from your servos with just a small change to your top value.**
 
 Task:

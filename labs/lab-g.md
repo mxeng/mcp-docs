@@ -17,7 +17,6 @@ Task:
 - Transmit sensor readings back from the robot unit to the control unit. **(G2)**
 - Signal transmission should be simultaneous, smooth, and with little latency or delay.
 
-<p align="center"> <img src="https://github.com/mxeng/mcp-docs/blob/master/labs/XbeeCommunication.png" alt="XBee serial bridge" width="40%"> </p>
 
 Note:
 - Show the design of your communication protocol in your lab book **(G3)**. Make it clear how

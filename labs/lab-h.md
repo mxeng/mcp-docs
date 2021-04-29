@@ -21,5 +21,7 @@ oscilloscope, then use to drive the left and right robot motors. **(H2)**
 
 <p align="center"> <img src="https://github.com/mxeng/mcp-docs/blob/master/labs/robot_drive.png" alt="stopwatch with start/stop button and reset button" width="80%"> </p>
 
+
+
 Suggested circuit:
-<p align="center"> <img src="https://github.com/mxeng/mcp-docs/blob/master/labs/hbridge_twomotor.png" alt="stopwatch with start/stop button and reset button" width="80%"> </p>
+<p align="center"> <img src="https://github.com/mxeng/mcp-docs/blob/master/labs/hbridge_twomotor.png" alt="stopwatch with start/stop button and reset button" width="60%"> </p>

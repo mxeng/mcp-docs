@@ -30,94 +30,70 @@ do not occur, and that latency is minimised. **(G4)**
 ### Multibyte Sending:
 ```c
 //main loop
-while(1)
-{
 	current_ms = milliseconds;
 	
 	//sending section
-	if(current_ms-last_send_ms >= 100) //sending rate controlled here
+	if( (current_ms-last_send_ms) >= 100) //sending rate controlled here
 	{
 		last_send_ms = current_ms;
 		serial2_write_byte(255); //send start byte
-		serial2_write_byte(1); //send first parameter
-		serial2_write_byte(2); //send second parameter
-		serial2_write_byte(3); //send third parameter
-		serial2_write_byte(4); //send fourth parameter
-		serial2_write_byte(5); //send fifth parameter
+		serial2_write_byte(1); //send test value for first parameter
+		serial2_write_byte(2); //send test value for second parameter
+		serial2_write_byte(3); //send test value for third parameter
+		serial2_write_byte(4); //send test value for fourth parameter
+		serial2_write_byte(5); //send test value for fifth parameter
 		serial2_write_byte(254); //send stop byte
 	}
-	
-}
 ```
 
 ### Multibyte Recieving:
-Don't forget to initialise your serial subsystems and to declare and initialise your variables.
-(An example is here: https://github.com/mxeng/mcp-docs/blob/master/labs/initialisation_example_for_coms.md)
 ```c
-//main loop
-while(1)
-{
-	if(UCSR2A&(1<<RXC2)) //if new serial byte has arrived: refer to page 238 of datasheet. Single bit flag indicates a new byte is available
+	serial_byte_in = UDR2; //move serial byte into variable
+	
+	switch(serial_fsm_state) //switch by the current state
 	{
-		serial_byte_in = UDR2; //move serial byte into variable
-		
-		switch(serial_fsm_state) //switch by the current state
-		{
 		case 0:
 		//do nothing, if check after switch case will find start byte and set serial_fsm_state to 1
 		break;
-		
 		case 1: //waiting for first parameter
-			temp_parameter_in_1 = serial_byte_in;
-			serial_fsm_state++;
+		recvByte1 = serial_byte_in;
+		serial_fsm_state++;
 		break;
-		
 		case 2: //waiting for second parameter
-			temp_parameter_in_2 = serial_byte_in;
-			serial_fsm_state++;
+		recvByte2 = serial_byte_in;
+		serial_fsm_state++;
 		break;
-		
-		case 3: //waiting for third parameter
-			temp_parameter_in_3 = serial_byte_in;
-			serial_fsm_state++;
+		case 3: //waiting for second parameter
+		recvByte3 = serial_byte_in;
+		serial_fsm_state++;
 		break;
-		
-		case 4: //waiting for third parameter
-			temp_parameter_in_4 = serial_byte_in;
-			serial_fsm_state++;
+		case 4: //waiting for second parameter
+		recvByte4 = serial_byte_in;
+		serial_fsm_state++;
 		break;
-		
-		case 5: //waiting for third parameter
-			temp_parameter_in_5 = serial_byte_in;
-			serial_fsm_state++;
-		break;
-		
-		case 6: //waiting for stop byte
-			if(serial_byte_in == 254) //stop byte
-			{
-				// now that the stop byte has been received, we can process the whole message
-				parameter_in_1 = temp_parameter_in_1;
-				parameter_in_2 = temp_parameter_in_2;
-				parameter_in_3 = temp_parameter_in_3;
-				parameter_in_4 = temp_parameter_in_4;
-				parameter_in_5 = temp_parameter_in_5;
-				
-				sprintf(serial_string, "1:%d, 2:%d, 3:%d\n", parameter_in_1, parameter_in_2, parameter_in_3);
-				serial0_print_string(serial_string);  // this is just debugging, printing to the USB serial to make sure the right messages are received
-				
-				//put your code to send back to the controller here if you want to do two way comms
-			} // if the stop byte is not received, there is an error, so no commands are implemented
-			serial_fsm_state = 0; //do nothing next time except check for start byte (below)
-		break;
-		}
-		
-		if(serial_byte_in == 255) //if start byte is received
+		case 5: //waiting for stop byte
+		if(serial_byte_in == 0xFE) //stop byte
 		{
-			serial_fsm_state=1; //reset to waiting for first parameter state on 255
+			// now that the stop byte has been received, set a flag so that the
+			// main loop can execute the results of the message
+			dataByte1 = recvByte1;
+			dataByte2 = recvByte2;
+			dataByte3 = recvByte3;
+			dataByte4 = recvByte4;
+			
+			new_message_received_flag=true;
 		}
+		// if the stop byte is not received, there is an error, so no commands are implemented
+		serial_fsm_state = 0; //do nothing next time except check for start byte (below)
+		break;
 	}
-}
+	if(serial_byte_in == 0xFF) //if start byte is received, we go back to expecting the first data byte
+	{
+		serial_fsm_state=1;
+	}
 ```
 
-Another interrupt driven example for comms can be found at:
+The above examples can be found incorporated into a full interrupt driven script for comms at:
 https://github.com/mxeng/mcp-docs/blob/master/code-examples/comms_sample_interrupt_controller.c
+
+Note if using the code in that example on the Robot portion of the project, replace #include "Controller.h" with #include "Robot.h"

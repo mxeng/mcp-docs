@@ -26,7 +26,7 @@ int main(void)
 	
 	//initialisation section, runs once
 	serial0_init(); //initialise serial0 subsystem
-	serial1_init(); //initialise serial1 subsystem
+	serial2_init(); //initialise serial2 subsystem
 	adc_init(); //initialse ADC
 	milliseconds_init(); //initialise timer one to track milliseconds
 	//Additional code to configure timer registers etc to produce appropriate PWMs

@@ -1,4 +1,4 @@
-Your init section on your robot might end up looking something like this (once you're doing two way communication):
+Example of initialisation for polling read/write of serial communication. If using an interrupt driven method, ignore this document.
 
 ```c
 int main(void)

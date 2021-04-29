@@ -16,9 +16,6 @@ Task:
 - Transmit instructions for two servos (as per lab F) from the control unit to the robot unit. **(G1)**
 - Transmit sensor readings back from the robot unit to the control unit. **(G2)**
 - Signal transmission should be simultaneous, smooth, and with little latency or delay.
-
-
-Note:
 - Show the design of your communication protocol in your lab book **(G3)**. Make it clear how
 your instructions are structured, and how the instructions are delimited.
 - Discuss any considerations for ensuring adequate data flow: i.e ensuring that buffer overflows

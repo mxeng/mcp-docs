@@ -11,13 +11,13 @@ Preliminary reading and reference material:
 
 The aim of this laboratory session is to familiarise yourselves with the equipment and software that we will be using for the rest of semester.  By the end of the session, you should have confirmed that the Microcontroller, kit board and development environment are all working correctly, and you should have practiced modifying, compiling, and downloading code to the ATMEGA in order to drive some output LEDs.
 
-```c
-
 To begin, you should download the "mcp-master" code framework from the GitHub repository: https://github.com/mxeng/mcp
 
 This code framework is the foundation of your labwork throughout semester. It contains two project, entitled "robot" and "controller": these simply enable you to program two microcontrollers from within the one code framework. At the end of semester, these two projects will be used to control the two microcontrollers: one mounted to your robot, and the other mounted on your controller. During the weekly labs, you will generally use just one of these projects.
 
 For this lab, you can use the "robot" project, and all of the code you need to edit is contained in the file "robot.c". You may also wish to look at the header file "robot.h", but it shouldn't be necessary to edit it for this lab.
+
+```c
 
 int main(void)
 {

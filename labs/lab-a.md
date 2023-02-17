@@ -52,6 +52,6 @@ int main(void)
 
 8. Locate the pins on the Arduino that correspond to Ports A,B,C,K,L (all digital pins)
 
-9. Test the program on at least one other port. This will involve changing both the circuit and the program.  **(A5*)**
+9. Test the program on at least one other port. This will involve changing both the circuit and the program.  **(A5)**
 
 10. Ensure that all of your work is comprehensively documented in your logbook, including pseudocode or flowcharts where necessary.  You should be able to use the logbook to reproduce the lab session work very quickly if required later. Show your logbook to a demonstator.

@@ -39,7 +39,7 @@ You will also need to revise reading digital inputs using the ```PINx``` registe
 
 3. Modify your program to use the button press to switch the display between the input channels **(B3)**.  Include a flowchart of this program in your workbook.  **(B4)**
 
-4. Connect a thermistor, and a suitably chosen fixed resistor to an analog input in a voltage divider arrangement (sketch a circuit diagram).  Use your multimeter to estimate the range of resistances from room temperature to body temperature (heating the thermistor with your  fingers). Ensure you take note of the resistance range and predicted voltage range in your notes.  Find a way to represent the temperature of the thermistor using the LEDs.  You may need to adjust the range in software to maximize the range of input.  **(B5*)**
+4. Connect a thermistor, and a suitably chosen fixed resistor to an analog input in a voltage divider arrangement (sketch a circuit diagram).  Use your multimeter to estimate the range of resistances from room temperature to body temperature (heating the thermistor with your  fingers). Ensure you take note of the resistance range and predicted voltage range in your notes.  Find a way to represent the temperature of the thermistor using the LEDs.  You may need to adjust the range in software to maximize the range of input.  **(B5)**
 
 All your work must be comprehensively recorded in your workbook.  A separate formal writeup is not required, but your workbook must contain all the information that would be contained in a formal writeup including:
 

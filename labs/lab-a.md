@@ -46,12 +46,12 @@ int main(void)
 
 5. Describe the program functionality in your logbook. How is the written pin specified? What would happen if the | symbol was omitted in "PORTA |= (1<<PA3)"? What would happen if the & symbol was ommitted in "PORTA &= ~(1<<PA3)"? (hint: try it!) **(A2)**
 
-6. Modify your program so that pins 2 and 5 of PORTA (pins 28 and 25 respectively) are blinked in sequence. **(A3)**
+6. Modify your program so that pins 2 and 5 of PORTA (pins 28 and 25 respectively) are blinked in sequence, explain what changes have been made to accomplish this. **(A3)**
 
-7. Modify your program so that the LEDs are lit one at a time in sequence from PA0 to PA7 and then back again. **(A4)**
+7. Modify your program so that the LEDs are lit one at a time in sequence from PA0 to PA7 and then back again, explain what changes have been made to accomplish this. **(A4)**
 
 8. Locate the pins on the Arduino that correspond to Ports A,B,C,K,L (all digital pins)
 
-9. Test the program on at least one other port. This will involve changing both the circuit and the program.  **(A5*)**
+9. Test the program on at least one other port, explain what changes have been made to accomplish this. This will involve changing both the circuit and the program.  **(A5)**
 
 10. Ensure that all of your work is comprehensively documented in your logbook, including pseudocode or flowcharts where necessary.  You should be able to use the logbook to reproduce the lab session work very quickly if required later. Show your logbook to a demonstator.

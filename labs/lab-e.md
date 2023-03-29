@@ -25,5 +25,5 @@ Your documentation should include:
 - A clear specification of the scope of your task
 - All relevant calculations, including prescaler and comparison values. **(E3)**
 - All relevant circuit diagrams. **(E4)**
-- Some pseudocode or flowcharts (preferred) showing the implementation of the logic. **(E5)**
+- A flowchart showing the implementation of the logic. **(E5)**
 - A description of any tests conducted to verify functionality. 

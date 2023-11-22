@@ -33,13 +33,23 @@ You will also need to revise reading digital inputs using the ```PINx``` registe
 
 ### Lab tasks:
 
+Task one is to light up a series of eight led's based on the position of a joystick and use the push button to determine which channel of the joystick is being read.
+
 1. An analog joystick is provided, which consists of two potentiometers and a push button. When the joystick is connected to power and ground, the two analog output pins will deliver voltages proportional to the stick position in the horizontal and vertical directions. The push-button is configured active-low (meaning the output  on the SEL line is low when pressed and open otherwise). Connect the joystick to your Arduino so that you are able to read both the analog inputs and the button state. You will need to either configure an internal pull-up resistor for the select line, or else connect an external pull-up resistor. **Sketch a circuit diagram** which shows how the potentiometers and buttons are configured, including the pull-up resistor, and showing all Arduino/microcontroller input/output pins. **(B1)**
 
-2. Write a program which reads the input voltage from one channel and displays the result using up to eight LEDs (you may reeuse a circuit from Lab A).  **(B2)**
+2. Draw a flowchart describing the final program in your workbook. **(B2)**
 
-3. Modify your program to use the button press to switch the display between the input channels **(B3)**.  Include a flowchart of this program in your workbook.  **(B4)**
+2. Write a initial program which reads the input voltage from one channel and displays the result using up to eight LEDs (you may reeuse a circuit from Lab A).  **(B3)**
 
-4. Connect a thermistor, and a suitably chosen fixed resistor to an analog input in a voltage divider arrangement (sketch a circuit diagram).  Use your multimeter to estimate the range of resistances from room temperature to body temperature (heating the thermistor with your  fingers). Ensure you take note of the resistance range and predicted voltage range in your notes.  Find a way to represent the temperature of the thermistor using the LEDs.  You may need to adjust the range in software to maximize the range of input.  **(B5*)**
+3. Modify your program to use the button press to switch the display between the input channels **(B4)**.
+
+Task two is to light up a series of eight led's based on the temperature of a thermister.
+
+1. Use your multimeter to estimate the range of resistances from room temperature to body temperature (heating the thermistor with your fingers), ensure you take note of the resistance range and predicted voltage range in your notes.
+
+2. Determine the size of a suitable fixed resistor to use in a voltage devider circuit (sketch circuit).
+
+3. Find a way to represent the temperature of the thermistor using the LEDs (convert from binary).  You will need to adjust the range in software to maximize the range of input.  **(B5)**
 
 All your work must be comprehensively recorded in your workbook.  A separate formal writeup is not required, but your workbook must contain all the information that would be contained in a formal writeup including:
 

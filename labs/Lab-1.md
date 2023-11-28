@@ -1,6 +1,6 @@
 # MXEN2002 Mechatronic Microcontroller Project
 
-### Laboratory A:  Downloading to the microcontroller, driving LEDs
+### Laboratory 1:  Downloading to the microcontroller, driving LEDs
 
 **Before the lab**
  - **This unit will involve programming a microcontroller in C, you will need to review programming notes and material and if unfamiliar with C language, and complete tutorials on the basics of C language.**
@@ -29,7 +29,7 @@ int main(void)
 }//end main 
 ```
 
-### Task
+### Lab Tasks
 
 During this laboratory session you will set up and familiarise yourself with the development environment, modify and upload code to the microcontroller to drive some leds.
 

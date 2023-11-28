@@ -1,6 +1,6 @@
 # Mechatronic Microcontroller Project MXEN2002
 
-## Laboratory 3:  Range sensor calibration and the LCD
+## Laboratory 4:  Range sensor calibration and the LCD
 
 ### Lab Briefing
 

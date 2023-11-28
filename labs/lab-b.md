@@ -38,6 +38,13 @@ Task two is to light up a series of eight led's based on the temperature of a th
 
 ### Before the lab
 
+  - **Read up on analogue joysticks and sketch a circuit diagram of the internals of the analogue joystick and what it is connected to on your microcontroller.**
+
+  - **Read up on reading digital using ```PINx``` registers (e.g ```PINA``` for Port A etc) to read digital inputs.**
+
+  - **Familiarise with the ADC pin locations and functionality through the ATmega2560 datasheet**
+
+  - **Draw a flowchart of your expected 
 
 ADC stands for Analogue to Digital Converter.  It is an interface which converts an analogue voltage (e.g 0-5V) into a digital signal (e.g an 8-bit or 10-bit number).  An ADC is essential if you wish to be able to process analogue signals with your Microcontroller.
 

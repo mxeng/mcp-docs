@@ -26,6 +26,13 @@ Drive a DC motor using a darlington driver, with flyback diode, turning it on an
 
 ### Before the lab
 
+- Read the ULN2803 Darlington driver and the 2N3904 NPN transistor specification sheets
+- Calculate if a resistor would be needed for a 12 volt (200mA or 300mA) lamp, based on expected gain
+- Read up on button-bounce, and consider ways of eliminating this problem.
+- Learn how to configure and use interrupts in AVR GCC. These **tutorials**
+- Review flyback diodes and DC motors
+- Draw a flow chart for planned program of task 2, separate flows for interrupts
+
 Before the lab:
 - Read the ULN2803 Darlington driver and the 2N3904 NPN transistor specification sheets
 - Read up on button-bounce, and consider ways of eliminating this problem.

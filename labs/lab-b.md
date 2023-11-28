@@ -1,6 +1,37 @@
 # Mechatronic Microcontroller Project MXEN2002
 
-### Laboratory B:  Digital and analogue inputs and the ADC
+## Laboratory 2:  Digital and analogue inputs and the ADC
+
+### Lab Information
+
+During this lab you will use analogue and digital inputs to read the state of a joystick and thermister and display their value on the LEDs setup during the previous lab.
+
+ADC stands for Analogue to Digital Converter.  It is an interface which converts an analogue voltage (e.g 0-5V) into a digital signal (e.g an 8-bit or 10-bit number).  An ADC is essential if you wish to be able to process analogue signals with your Microcontroller.
+
+The ATmega can read up to 16 different analogue voltages (using the Port F & Port K pins).
+
+In addition, the ADC requires two reference voltages.  AREF is the maximum measured voltage (that is, the voltage which will return the largest digital output), while AGND is the minimum measured voltage (often 0V, connected to the GND pin on the ATmega2560).  AVCC is the ADC power supply, and will usually be simply the same 5V power supply as the VCC pin.
+
+The ADC on the ATmega2560 is manipulated using specific ADC registers, which are described in the ATmega2560 datasheet. 
+Some framework code has been provided for you (in the files adc.c and adc.h), to make dealing with the ADC a simpler, however you may wish to examine adc.c and the datasheet to see exactly how this works. This framework initialises AREF to 5V (VCC).
+
+You will need to firstly ensure the header file adc.h is #included in your project header file (probably in Robot.h): The example code provided below shows the syntax for initialising and reading from an ADC using the framework.
+
+You will be using an analogue joystick which consists of two potentiometers and a push button. When the joystick is connected to power and ground, the two analog output pins will deliver voltages proportional to the stick position in the horizontal and vertical directions. The push-button is configured active-low (meaning the output  on the SEL line is low when pressed and open otherwise)
+
+You will also be using a thermistor which will vary in resistance as its temperature is changed. 
+
+**TASK 1**
+
+Wire a circuit to read joystick position and push button state and write code to light up a series of eight led's based on the position of a joystick and use the push button to determine which channel of the joystick is being read.
+
+**TASK 2**
+
+
+
+### Before the lab
+
+  - **
 
 ADC stands for Analogue to Digital Converter.  It is an interface which converts an analogue voltage (e.g 0-5V) into a digital signal (e.g an 8-bit or 10-bit number).  An ADC is essential if you wish to be able to process analogue signals with your Microcontroller.
 

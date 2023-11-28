@@ -3,13 +3,15 @@
 ## Laboratory 1:  Downloading to the microcontroller, driving LEDs
 
 
-### Lab Tasks
+### Lab Briefing
 
 During this laboratory session you will set up and familiarise yourself with the development environment, modify and upload code to the microcontroller to drive some leds.
 
 There is a code framework provided on GitHub which will form the foundation of your labwork throughout semester. It uses Visual Studio Code and platform.io to compile and upload code to your atmega2560 (arduinoMega) microcontroller. It contains libraries and two projects (in src), entitled "robot" and "controller": these simply enable you to program two microcontrollers from within the one code framework. At the end of semester, these two projects will be used to control the two microcontrollers: one mounted to your robot, and the other mounted on your controller. During the weekly labs, you will generally use just one of these projects.
 
 For this lab, you can use the "robot" project, and all of the code you need to edit is contained in the file "robot.c". You may also wish to look at the header file "robot.h", but it shouldn't be necessary to edit it for this lab.
+
+**TASK 1**
 
 Your task is to demonstrate the ability to modify and upload code to the microcontroller to control a series of eight LEDs across multiple digital output registers. You will begin by connecting 8 LEDs and resistors to PORTA (arduino pins 22-29) using a breadboard. Check [ArduinoMega schematic](https://www.arduino.cc/en/uploads/Main/arduino-mega2560-schematic.pdf) for correct pin locations, or the [pinmapping document](https://docs.arduino.cc/hacking/hardware/PinMapping2560).
 
@@ -41,8 +43,7 @@ int main(void)
 }//end main 
 ```
 
-
-**Outcomes**
+### Outcomes
 
 1.  Calculate a series limiting resistor value to ensure current limit is not exceeded for an LED connected to PORTA.
     - Check the [atmega](http://www.atmel.com/Images/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf) and [LED](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.farnell.com/datasheets/1498852.pdf) datasheets for their electrical characteristics, you may assume VCC is 5v.

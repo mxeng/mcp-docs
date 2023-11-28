@@ -37,9 +37,25 @@ There is a code framework provided on GitHub which will form the foundation of y
 
 For this lab, you can use the "robot" project, and all of the code you need to edit is contained in the file "robot.c". You may also wish to look at the header file "robot.h", but it shouldn't be necessary to edit it for this lab.
 
-Your task is to demonstrate the ability to modify and upload code to the microcontroller to control a series of eight LEDs across multiple digital output registers.
+Your task is to demonstrate the ability to modify and upload code to the microcontroller to control a series of eight LEDs across multiple digital output registers. You will begin by connecting 8 LEDs and resistors to PORTA (arduino pins 22-29) using a breadboard. Check [ArduinoMega schematic](https://www.arduino.cc/en/uploads/Main/arduino-mega2560-schematic.pdf) for correct pin locations, or the [pinmapping document](https://docs.arduino.cc/hacking/hardware/PinMapping2560).
+
 **Outcomes**
-  -  Task 1
+
+1.  Calculate a series limiting resistor value to ensure current limit is not exceeded for an LED connected to PORTA.
+    - Check the [atmega](http://www.atmel.com/Images/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf) and [LED](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.farnell.com/datasheets/1498852.pdf) datasheets for their electrical characteristics, you may assume VCC is 5v.
+    
+2.  Describe how the written pins are specified. What is the purpose of the | and the & symbols, what would happen if they were removed? 
+    - Check the Bit Manipulation tutorial https://github.com/mxeng/mcp-docs/blob/master/tutorials/bit_manipulation.md)
+    
+3.  Demonstrate two LEDs blinking alternately
+
+4.  Demonstrate 8 LEDs blinking in sequence
+    - Preferably use a for or while loop [reference](https://en.cppreference.com/w/c/language/for)
+  
+5.  Demonstrate the blinking sequence on a separate PORT
+
+
+END Change
 
 1. Calculate the requirements of the current limiting resistor that is required in series with an LED to be certain that the current from the microcontroller and through the LED is within the limits of the devices. Check the [atmega](http://www.atmel.com/Images/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf) and [LED](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.farnell.com/datasheets/1498852.pdf) datasheets for their electrical characteristics, you may assume VCC is 5v. **(A1)**
 

@@ -1,6 +1,6 @@
 # Mechatronic Microcontroller Project MXEN2002
 
-## Laboratory F: PWM for servo control
+## Laboratory 6: PWM for servo control
 
 ### Lab Briefing
 

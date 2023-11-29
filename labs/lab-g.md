@@ -1,26 +1,45 @@
 # Mechatronic Microcontroller Project MXEN2002
 
-### Laboratory G: Serial Communications
+## Laboratory G: Serial Communications
 
-**Before the lab**:
-- Ensure you have read the lecture notes on serial communication, PWM and servomotors
-- Review the instructions given in the Lecture session
-- Review the Atmega datasheet on timers and PWM
-- Review the XBee datasheet
+### Lab Briefing
 
+Universal Synchronous and Asynchronous serial Receiver and Transmitter or USART is a flexible serial communication device. It is a 2 pin commmunication system using transmit, Tx, and Receive, Rx, pins for independant full duplex communication. In this lab we will be using it in asynchronous mode with each device having its own internal clock generation. For wireless communication you will be using XBee modules to connect Tx on one microcontroller to Rx on the other wirelessly.
 
-Task:
+The framework provided to you sets up USART for a baudrate of 9600 using 8 bit character sizes. It includes functions for initialising the serial communication and for writing a byte or string to serial, see serial.c.
+
+A communication protocol defines how each device communicates accross its communication channel, in this case USART. You will need to define what is being sent/recieved by each device across the serial communication.
+
+Some sample code is provided which you may use as a starting point for creating your communication protocol for communicating accross serial using a multi-byte protocol, see comms_example_interrupt.c
+
 - A controller Arduino will be provided, equipped with an LCD display, two analogue joysticks and an XBee communication unit.  
   Schematic: https://github.com/mxeng/mcp-docs/blob/master/labs/controller_schematic.pdf
-- You should establish wireless communication between two the controller unit and your robot Arduino unit equipped with a second XBee.
-- Transmit instructions for two servos (as per lab F) from the control unit to the robot unit. **(G1)**
-- Transmit sensor readings back from the robot unit to the control unit. **(G2)**
-- Signal transmission should be simultaneous, smooth, and with little latency or delay.
-- Show the design of your communication protocol in your lab book **(G3)**. Make it clear how
-your instructions are structured, and how the instructions are delimited.
-- Discuss any considerations for ensuring adequate data flow: i.e ensuring that buffer overflows
-do not occur, and that latency is minimised. **(G4)**
-- Include schematics for both of your circuits in your lab book. **(G5)**
+  
+**TASK 1**
+
+Your task is to achieve 2-way simultaneous communication between 2 microcontrollers. 
+	- Microcontroller one, robot, will read transmit range sensor values, and control a servo motor from serial commands.
+ 	- Microcontroller two, controller, will read and transmit joystick values while outputting range sensor values from serial to an LCD screen.
+
+### Before the lab
+- Revise lab 2, 4 for joystick and range sensor reading
+- Revise lab 6 for servo control
+- Revise LCD printing
+- Ensure you have read the lecture notes on serial communication
+- Plan your communication protocol defining what is being sent and recieved by each device
+- Read and familiarize with the USART documentation in the ATmega datasheet chapter 22
+- Review the XBee datasheet
+
+### Outcomes
+
+1. Define the communication protocol for serial communication between the robot and controller microcontrollers.
+	- Ensure it is clear how the instructions are structured and how they are delimited.
+2. Discuss any considerations for ensuring adequate data flow: i.e ensuring that buffer overflows
+do not occur, and that latency is minimised.
+3. Demonstrate the use of serial for debugging code, show that if code enters erronomous states there is adaquate error states for debuggin
+4. Demonstrate functional 1-way communication
+5. Demonstrate functional 2-way communication
+
 
 ### Multibyte Sending:
 ```c

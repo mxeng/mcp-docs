@@ -14,32 +14,8 @@ Some sample code is provided which you may use as a starting point for creating 
 
 - A controller Arduino will be provided, equipped with an LCD display, two analogue joysticks and an XBee communication unit.  
   Schematic: https://github.com/mxeng/mcp-docs/blob/master/labs/controller_schematic.pdf
-  
-**TASK 1**
 
-Your task is to achieve 2-way simultaneous communication between 2 microcontrollers. 
-	- Microcontroller one, robot, will read transmit range sensor values, and control a servo motor from serial commands.
- 	- Microcontroller two, controller, will read and transmit joystick values while outputting range sensor values from serial to an LCD screen.
-
-### Before the lab
-- Revise lab 2, 4 for joystick and range sensor reading
-- Revise lab 6 for servo control
-- Revise LCD printing
-- Ensure you have read the lecture notes on serial communication
-- Plan your communication protocol defining what is being sent and recieved by each device
-- Read and familiarize with the USART documentation in the ATmega datasheet chapter 22
-- Review the XBee datasheet
-
-### Outcomes
-
-1. Define the communication protocol for serial communication between the robot and controller microcontrollers.
-	- Ensure it is clear how the instructions are structured and how they are delimited.
-2. Discuss any considerations for ensuring adequate data flow: i.e ensuring that buffer overflows
-do not occur, and that latency is minimised.
-3. Demonstrate the use of serial for debugging code, show that if code enters erronomous states there is adaquate error states for debuggin
-4. Demonstrate functional 1-way communication
-5. Demonstrate functional 2-way communication
-
+Below is an example of multibyte sending serial commmunication using the USART framework provided.
 
 ### Multibyte Sending:
 ```c
@@ -59,6 +35,10 @@ do not occur, and that latency is minimised.
 		serial2_write_byte(254); //send stop byte
 	}
 ```
+
+This will send 5 bytes of information with delimited by a start byte (255) and stop byte (254).
+
+Then this is an example of multibyte receiving of information using the same structure.
 
 ### Multibyte Recieving:
 ```c
@@ -107,8 +87,36 @@ do not occur, and that latency is minimised.
 	}
 ```
 
+The above needs to be incorporated into either a polling or interrupt driven routine to control when information is taken out of the USART I/O Data Register (UDRn).
+
 ### Full Example:
 The above code snippets can be found incorporated into a full interrupt driven script for comms at:
 https://github.com/mxeng/mcp-docs/blob/master/code-examples/comms_sample_interrupt_controller.c
+
+**TASK 1**
+
+Your task is to achieve 2-way simultaneous communication between 2 microcontrollers. 
+	- Microcontroller one, robot, will read transmit range sensor values, and control a servo motor from serial commands.
+ 	- Microcontroller two, controller, will read and transmit joystick values while outputting range sensor values from serial to an LCD screen.
+
+### Before the lab
+- Revise lab 2, 4 for joystick and range sensor reading
+- Revise lab 6 for servo control
+- Revise LCD printing
+- Ensure you have read the lecture notes on serial communication
+- Plan your communication protocol defining what is being sent and recieved by each device
+- Read and familiarize with the USART documentation in the ATmega datasheet chapter 22
+- Review the XBee datasheet
+
+### Outcomes
+
+1. Define the communication protocol for serial communication between the robot and controller microcontrollers.
+	- Ensure it is clear how the instructions are structured and how they are delimited.
+2. Discuss any considerations for ensuring adequate data flow: i.e ensuring that buffer overflows
+do not occur, and that latency is minimised.
+3. Demonstrate the use of serial for debugging code, show that if code enters erronomous states there is adaquate error states for debuggin
+4. Demonstrate functional 1-way communication
+5. Demonstrate functional 2-way communication
+
 
 Note if using the code in that example for the Robot (i.e. programming in Robot.c), replace #include "Controller.h" with #include "Robot.h"

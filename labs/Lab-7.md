@@ -1,6 +1,6 @@
 # Mechatronic Microcontroller Project MXEN2002
 
-## Laboratory G: Serial Communications
+## Laboratory : Serial Communications
 
 ### Lab Briefing
 

@@ -96,8 +96,8 @@ https://github.com/mxeng/mcp-docs/blob/master/code-examples/comms_sample_interru
 **TASK 1**
 
 Your task is to achieve 2-way simultaneous communication between 2 microcontrollers. 
-	- Microcontroller one, robot, will read and transmit range sensor values, and control a servo motor from serial commands.
- 	- Microcontroller two, controller, will read and transmit joystick values while outputting range sensor values from serial to an LCD screen.
+- Microcontroller one "*robot*" will read and transmit range sensor values, and control a servo motor from serial commands.
+- Microcontroller two "*controller*" will read and transmit joystick values while outputting range sensor values from serial to an LCD screen.
 
 ### Before the lab
 - Revise lab 2, 4 for joystick and range sensor reading

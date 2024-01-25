@@ -13,7 +13,7 @@ For this lab, you can use the "robot" project, and all of the code you need to e
 
 **TASK 1**
 
-Your task is to demonstrate the ability to modify and upload code to the microcontroller to control a series of eight LEDs across multiple digital output registers. You will begin by connecting 8 LEDs and resistors to PORTA (arduino pins 22-29) using a breadboard. Check [ArduinoMega schematic](https://www.arduino.cc/en/uploads/Main/arduino-mega2560-schematic.pdf) for correct pin locations.
+Your task is to demonstrate the ability to modify and upload code to the microcontroller to control a series of eight LEDs across multiple digital output registers. You will begin by connecting 8 LEDs and resistors to PORTA (arduino pins 22-29) using a breadboard. Check [ArduinoMega schematic](https://www.arduino.cc/en/uploads/Main/arduino-mega2560-schematic.pdf) or the [PinMapping](https://docs.arduino.cc/resources/pinouts/A000067-full-pinout.pdf) for correct pin locations.
 
 ### Before the lab
 

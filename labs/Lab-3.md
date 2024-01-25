@@ -37,7 +37,7 @@ Drive a DC motor using a darlington driver, with flyback diode, turning it on an
 
 1. Draw relevant circuit diagrams: One diagram for an output driver circuit using the 2N3904 transistor controlling the 12 volt lamp, one diagram for the darlington driver and flyback diode controlling the motor.
 2. Demonstrate a functional and safe circuit (see datasheets to ensure safe currents) which blinks a 12 volt lamp using a transistor.
-3. Demonstrate a push button being used to toggle the state of the 12 volt lamp of motor using an interrupt
+3. Demonstrate a push button being used to toggle the state of the 12 volt lamp using an interrupt
 4. Demonstrate a 12 volt DC motor being controlled via darlington driver, with a debounced interrupt driven push button.
    - Show the circuit to a lab demonstrator prior to powering the circuit.
 5. Describe the function of the flyback diode in the darlington driver and motor circuit. Explain what happens to the current flow when the motor is switched off (with and without the flyback diode)5

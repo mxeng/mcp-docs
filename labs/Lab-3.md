@@ -40,4 +40,4 @@ Drive a DC motor using a darlington driver, with flyback diode, turning it on an
 3. Demonstrate a push button being used to toggle the state of the 12 volt lamp using an interrupt
 4. Demonstrate a 12 volt DC motor being controlled via darlington driver, with a debounced interrupt driven push button.
    - Show the circuit to a lab demonstrator prior to powering the circuit.
-5. Describe the function of the flyback diode in the darlington driver and motor circuit. Explain what happens to the current flow when the motor is switched off (with and without the flyback diode)5
+5. Describe the function of the flyback diode in the darlington driver and motor circuit. Explain what happens to the current flow when the motor is switched off (with and without the flyback diode)

@@ -1,4 +1,4 @@
-# MXEN2002 Mechatronic Microcontroller Project
+# MXEN2003 Mechatronic Microcontroller Project
 
 ## Laboratory 1:  Downloading to the microcontroller, driving LEDs
 

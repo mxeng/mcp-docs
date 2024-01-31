@@ -1,8 +1,8 @@
-# Mechatronics Microcontroller Project MXEN2002
+# Mechatronics Microcontroller Project MXEN2003
 
 ## Laboratory 5: Timers, interrupts and the LCD display
 
-### Lab Breiefing
+### Lab Briefing
 
 The ATmega 2560 has 6 timer/counters available with variable modes of operation. Timer/Counter 0 and 2 are 8 bit timers and are configured a little differently to timers 1,3,4 and 5. It is suggested that you use one of timers 1,3 or 4 for your stopwatch, and later PWM generation.
 

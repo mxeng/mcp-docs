@@ -23,7 +23,7 @@ Use a LCD screen to display voltage (or ADC value) from the range sensor, with a
 Gather data to calibrate the range sensor and demonstrate a calibrated range sensor printing distance to an LCD screen. 
 
 ### Before the lab
-- **Review the “hd44780” Library in your provided framework code**
+- **Review the “hd44780” Library in your provided framework code and LCD [datasheet](https://pdf.datasheetcatalog.com/datasheet/vishay/016m002b.pdf)**
 - **Review string formatting in c, suggest using sprintf [reference](https://en.cppreference.com/w/cpp/io/c/fprintf)**
 - **Review analog input**
 - **Draw a circuit diagram of the LCD screen and range sensor showing pin connections to the microcontroller**

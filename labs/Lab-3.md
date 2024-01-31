@@ -28,7 +28,7 @@ Drive a DC motor using a darlington driver, with flyback diode, turning it on an
 
 - Read the ULN2803 Darlington driver and the 2N3904 NPN transistor specification sheets
 - Calculate if a resistor would be needed and what size for a 12 volt (200mA or 300mA) lamp, based on expected gain from the NPN transistor
-- Read up on button-bounce, and consider ways of eliminating this problem.
+- Read up on button-bounce, and consider ways of eliminating this problem - information here http://www.ganssle.com/debouncing-pt2.htm.
 - Learn how to configure and use interrupts in AVR GCC. These **tutorials** These tutorials are a good resource: http://www.fourwalledcubicle.com/AVRArticles.php
 - Review flyback diodes and DC motors
 - Draw a flow chart for planned program of task 2, separate flows for interrupts

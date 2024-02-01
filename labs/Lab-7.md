@@ -1,4 +1,4 @@
-# Mechatronic Microcontroller Project MXEN2002
+# Mechatronic Microcontroller Project MXEN2003
 
 ## Laboratory : Serial Communications
 

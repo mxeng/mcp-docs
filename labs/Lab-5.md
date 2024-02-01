@@ -22,7 +22,7 @@ Some factors to consider:
 Develop a simple stop watch using an LCD to show the elapsed time, this is a broad scope but some requirements are outlined below.
   - You will need to set up a hardware to a suitable interval (0.1, 1 or 10 ms), and write a program to keep count of milliseconds, seconds and minutes.
   - You will need to calculate a prescaler and choose register configurations
-  - As a minimum the stopwatch needs to have a start/stop button and display time in a readable format.
+  - As a minimum the stopwatch needs to have a start/stop button, a reset button and display time in a readable format.
 
 <p align="center"> <img src="https://cdn.rawgit.com/mxeng/mcp-docs/58d989b29e79487f61872b26bb9f59bde3d672a8/labs/stopwatch.svg" alt="stopwatch with start/stop button and reset button" width="30%"> </p>
 

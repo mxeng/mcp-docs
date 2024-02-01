@@ -28,7 +28,7 @@ int main(void)
 	
 	while(1)
 	{
-		current_ms = milliseconds;
+		current_ms = milliseconds_now();
 		//sending section
 		if(current_ms-last_send_ms >= 100) //sending rate controlled here one message every 100ms (10Hz)
 		{

@@ -13,8 +13,8 @@ You will need to configure a timer/counter to generate a PWM as this control sig
 Establish control over two servos, using two independent PWM signals produced by one or two of the microcontroller timers.
   
 ### Before the lab
-- Ensure you have read the lecture notes on timers, PWM and servomotors
-- Review the Atmega datasheet on timers and PWM
+- Ensure you have read the lecture notes on timers, PWM and servomotors 
+- Review the Atmega datasheet on timers and PWM - [Servo Motor datasheet](https://www.parallax.com/package/parallax-standard-servo-downloads/?wpdmdl=3873&refresh=65bae9558291e1706748245&ind=1660592761824&filename=900-00005-Parallax-Digital-Std-Servo-Guide-v3.0.pdf)
 - Calculate prescaler values and comparison ranges suitable for the servo control task: the base period of the servomotor: a base period in the range 15-25ms is recommended
 
 ### Outcomes

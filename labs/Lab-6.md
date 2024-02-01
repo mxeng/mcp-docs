@@ -22,7 +22,7 @@ Establish control over two servos, using two independent PWM signals produced by
 2. Explain how the timer/counter registers are configured to achieve the desired PWM
 3. Demonstrate an appropriate PWM on an oscilloscope
    - Demonstrate this prior to connecting to a servo motor, an incorrect waveform can damage the servo motors
-4. Demonstrate *smooth* control of a servo motor
+4. Demonstrate *smooth* control of a servo motor using a joystick
 5. Demonstrate simultaneous independent control of two servo motors
    - This may require a 5 volt regulator if the power requirements for the servo motors is too large
 

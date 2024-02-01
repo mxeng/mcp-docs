@@ -34,6 +34,7 @@ Develop a simple stop watch using an LCD to show the elapsed time, this is a bro
 - Research how to configure and use hardware timers (section 17 of the ATmega datasheet: http://www.atmel.com/Images/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf).
   - Calculate a suitable prescaler and register configuration (TCCRnA/B, TIMSKn, OCRnA/B/C, ICRn)
 - Plan your program using a flowchart to describe its functionality
+- Review C variables - volatile for variables which change in interrupts
 - Review button debounce
 
 ### Outcomes

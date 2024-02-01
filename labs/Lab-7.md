@@ -1,6 +1,6 @@
 # Mechatronic Microcontroller Project MXEN2003
 
-## Laboratory : Serial Communications
+## Laboratory 7: Serial Communications
 
 ### Lab Briefing
 
@@ -20,7 +20,7 @@ Below is an example of multibyte sending serial commmunication using the USART f
 ### Multibyte Sending:
 ```c
 //main loop
-	current_ms = milliseconds;
+	current_ms = milliseconds_now();
 	
 	//sending section
 	if( (current_ms-last_send_ms) >= 100) //sending rate controlled here

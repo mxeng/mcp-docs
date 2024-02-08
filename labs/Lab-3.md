@@ -12,7 +12,7 @@ Hardware interrupts allow for functions to be executed by external voltage input
 
 When the push button is pressed an released the voltage does not transition from low to high in one step there is *bouncing* which occurs which makes it appear like the button is being pressed multiple times.
 
-<p align="center"> <img src="https://github.com/MrTristanDavies/mcp-docs/blob/master/labs/button_bounce.png" alt="Button Bounce" width="30%"> </p>
+<p align="center"> <img src="https://github.com/mxeng/mcp-docs/blob/master/labs/button_bounce.png" alt="Button Bounce" width="30%"> </p>
 
 To avoid the interrupts being triggered multiple times from a single button press a form of button debounce needs to be implemented, either in software or hardware.
 

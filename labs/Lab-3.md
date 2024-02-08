@@ -41,3 +41,12 @@ Drive a DC motor using a darlington driver, with flyback diode, turning it on an
 4. Demonstrate a 12 volt DC motor being controlled via darlington driver, with a debounced interrupt driven push button.
    - Show the circuit to a lab demonstrator prior to powering the circuit.
 5. Describe the function of the flyback diode in the darlington driver and motor circuit. Explain what happens to the current flow when the motor is switched off (with and without the flyback diode)
+
+
+**Tips**
+
+Note on volatile variable type.
+
+The compiler optimsises code to use the same value rather than reading the variables value if it does not see change in the value.
+For variables modified in interrupts since this modification is not visible variable access within the main function their value will not be updated.
+Declaring a variable as volatile tells the compiler that the variables value is prone to change externally and to always read the variable to check its value.

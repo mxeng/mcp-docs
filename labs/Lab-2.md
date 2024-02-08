@@ -49,7 +49,7 @@ Task two is to light up a series of eight led's based on the temperature of a th
 
 ### Outcomes
 
-1. Sketch a circuit diagram which shows how the potentiometers and buttons are configured, including the pull-up resistor, and showing all Arduino/microcontroller input/output pins.
+1. Sketch a circuit diagram which shows how the potentiometers and buttons are configured (joystick internals), including the pull-up resistor, and showing all Arduino/microcontroller input/output pins.
 
 2. Draw a flowchart describing the final program in your workbook.
 

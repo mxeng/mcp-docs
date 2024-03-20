@@ -35,5 +35,5 @@ Gather data to calibrate the range sensor and demonstrate a calibrated range sen
 - Demonstrate a functional LCD display
 - Sketch a circuit diagram of the LCD screen and range sensor showing pin connections
 - Draw a flowchart showing the program logic, for calibrating range sensor (task 1)
-- Demonstrate the range sensor reading on the LCD display, with push botton.
+- Demonstrate the range sensor reading on the LCD display, with push button.
 - Demonstrate a calibrated range sensor printing distance on the LCD screen

@@ -29,7 +29,7 @@ Develop a simple stop watch using an LCD to show the elapsed time, this is a bro
 ### Before the lab
 
 - Review the use of the LCD using the HD44780 Library if necessary: http://community.atmel.com/projects/hd44780-library.
-- Review the use of harware interrupts.
+- Review the use of hardware interrupts.
   - Plan configuration of hardware registers (EICRnA/B, EIMSK)
 - Research how to configure and use hardware timers (section 17 of the ATmega datasheet: http://www.atmel.com/Images/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf).
   - Calculate a suitable prescaler and register configuration (TCCRnA/B, TIMSKn, OCRnA/B/C, ICRn)

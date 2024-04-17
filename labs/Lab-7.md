@@ -112,11 +112,13 @@ Your task is to achieve 2-way simultaneous communication between 2 microcontroll
 
 1. Define the communication protocol for serial communication between the robot and controller microcontrollers.
 	- Ensure it is clear how the instructions are structured and how they are delimited.
-2. Discuss any considerations for ensuring adequate data flow: i.e ensuring that buffer overflows
-do not occur, and that latency is minimised.
-3. Demonstrate the use of serial for debugging code, show that if code enters erronomous states there is adaquate error states for debuggin
-4. Demonstrate functional 1-way communication
-5. Demonstrate functional 2-way communication
+	- Make it clear what information is sent in your communication protocol.
+2. Discuss any design considerations for ensuring adequate data flow:
+   	- What is buffer overflow and how did you account for it.
+   	- What controls the latency, how is is minimized.
+4. Demonstrate the use of serial for debugging code, show that if code enters erronomous states there is adaquate error states for debuggin
+5. Demonstrate functional 1-way communication
+6. Demonstrate functional 2-way communication
 
 
 Note if using the code in that example for the Robot (i.e. programming in Robot.c), replace #include "Controller.h" with #include "Robot.h"

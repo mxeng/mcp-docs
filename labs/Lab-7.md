@@ -117,8 +117,10 @@ Your task is to achieve 2-way simultaneous communication between 2 microcontroll
    	- What is buffer overflow and how did you account for it.
    	- What controls the latency, how is is minimized.
 4. Demonstrate the use of serial for debugging code, show that if code enters erronomous states there is adaquate error states for debuggin
-5. Demonstrate functional 1-way communication
-6. Demonstrate functional 2-way communication
+5. Demonstrate functional 1-way communication*
+6. Demonstrate functional 2-way communication*
 
 
 Note if using the code in that example for the Robot (i.e. programming in Robot.c), replace #include "Controller.h" with #include "Robot.h"
+
+*functional requires that it fulfills the requirements of the lab TASK

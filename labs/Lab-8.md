@@ -16,7 +16,7 @@ An example of motor drive logic can be found here: https://github.com/mxeng/mcp-
 
 **TASK1**
 
-Assemble and demonstrate a working wireless robot drive system with intuitive controls. (Joystick -> XBee -> H-bridge )
+Assemble and demonstrate a working wireless robot drive system with intuitive controls*. (Joystick -> XBee -> H-bridge )
 
 ### Before the lab
 - Ensure you have read the lecture notes on PWM, H-bridges and motors
@@ -29,11 +29,13 @@ Assemble and demonstrate a working wireless robot drive system with intuitive co
 
 ### Outcomes
 - Show the configuration of the L293 H-bridge used to control the two motor with variable speed and direction, including a circuit diagram.
-- Show calculations / algorithm used to convert the joystick values into appropriate PWM comparison values and IO signals for motor control.
+- Show calculations / algorithm used to convert the joystick values into appropriate PWM comparison values and IO signals for motor control*.
   - This should include where the serial communication takes place.
 - Demonstrate a PWM with appropriate frequency (**100-500Hz**) and duty cycle control on a oscilloscope.
 - Demonstrate a appropriately wired circuit for motor control.
-- Demonstrate a working wireless robot drive system with intuitive controls.
+- Demonstrate a working wireless robot drive system with intuitive controls*.
+
+*intuitive controls: consider how you would expect to control an RC car
 
 <p align="center"> <img src="https://github.com/mxeng/mcp-docs/blob/master/labs/robot_drive.png" alt="stopwatch with start/stop button and reset button" width="80%"> </p>
 

@@ -34,7 +34,7 @@ Tasks one is to wire a circuit to read joystick position and push button state a
 
 **TASK 2**
 
-Task two is to light up a series of eight led's based on the temperature of a thermister.
+Task two is to light up a series of eight led's based on the ammount of light being recieved by a photoresistor.
 
 ### Before the lab
 
@@ -51,13 +51,13 @@ Task two is to light up a series of eight led's based on the temperature of a th
 
 1. Sketch a circuit diagram which shows how the potentiometers and buttons are configured (joystick internals), including the pull-up resistor, and showing all Arduino/microcontroller input/output pins.
 
-2. Draw a flowchart describing the final program in your workbook.
+2. Draw a flowchart describing the program for task 1 in your workbook.
 
 3. Demonstrate a functional mechatronic system which reads the input voltage from one channel of the joystick and displays the result on eight LEDs (using the circuit from Lab A).
 
 4. Demonstrate a functional mechatronic system which uses a push button to switch the display between the input channels displaying the result on the LEDs.
 
-5. Find a way to represent the temperature of the thstor using the LEDs (convert from binary).  You will need to adjust the range in software to maximize the range of input.
+5. Find a way to represent the light intensity received by the photoresistor using the eight LEDs (convert from binary).  You will need to adjust the range in software to maximize the range of input.
 
    - You will need to determine the size of a suitable fixed resistor to use in a voltage devider circuit (sketch circuit).
-   - Use a multimeter to estimate the range of resistances from room temperature to body temperature (heating the thermistor with your fingers), ensure you take note of the resistance range and predicted voltage range in your notes.
+   - Use a multimeter to estimate the range of resistances from ambient light to dark ensure you take note of the resistance range and predicted voltage range in your notes.

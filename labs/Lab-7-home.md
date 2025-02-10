@@ -27,4 +27,4 @@ Tips
   - Start slow < 5Hz, some of the operations (especially if using floats) can be processing intense for the microcontroller)
   - Test at each stage (if it helps you can calculate the average separately or pass by reference or print in function)
     
-<p align="center"> <img src="https://github.com/mxeng/mcp-docs/blob/master/labs/Frequency-Calc-Flow.png" alt="Button Bounce" width="30%"> </p>
+<p align="center"> <img src="https://github.com/mxeng/mcp-docs/blob/master/labs/Frequency-Calc-Flow.svg" alt="Button Bounce"> </p>

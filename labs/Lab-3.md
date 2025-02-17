@@ -6,7 +6,7 @@
 
 During this lab you will be using interrupts to read button presses and print to serial how many have been detected.
 
-To transmit data from the microcontroller to the computer a communication protocol needs to be initiated. Provided in the MCP repo is a serial library which communicates using USART on channel 0 with BAUD 9600.
+To transmit data from the microcontroller to the computer a communication protocol needs to be initiated. Provided in the MCP repo is a serial library which communicates using USART on channel 0 with BAUD 115200.
 
 The *serial0_print_string()* function prints a string to serial which can be viewed using VScodes inbuilt serial monitor. String literals can be sent accross using this function. To send variables using this command they must first be formatted into strings, see *springf*
 

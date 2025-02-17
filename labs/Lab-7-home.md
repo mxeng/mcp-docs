@@ -2,18 +2,18 @@
 
 ## Laboratory 7 at home task:
 
-This is an extension of lab 7 and will useful in future labs and your final project.
+This is an extension of lab 7 and will be useful in future labs and in your final project.
 
 In this task you will use your knowledge of timers and analogue sensors to determine the frequency of a flashing light being detected by a photoresistor.
 
-For this task you will need a photoresistor, a resistor to form a voltage divider and wires to connect them. You may find it useful to have a LED and resitor to use as a flashing light source.
+For this task you will need a photoresistor, a resistor to form a voltage divider and wires to connect them. You may find it useful to have a LED and resistor to use as a flashing light source.
 
 **Task**
 
 Determine the frequency a light is flashing which is being observed by a photoresistor. The suggested steps to use are outlined below.
   - Initialize a timer which will be used for sampling the ADCs at a specific interval
-      - Suggest using CTC mode, using a timer interrupt with a frequency ~100 Hz (note this will mean the highest frequency signal that can be observed will be 50 Hz. See Nyquist Rate and Aliasing)
-  - Use a static buffer array to store a number of adc samples (Use a index to store this position in this array and increment each time the sample is taken)
+      - We suggest using CTC mode, using a timer interrupt with a frequency ~100 Hz (note this will mean the highest frequency signal that can be observed will be 50 Hz. See Nyquist Rate and Aliasing)
+  - Use a static buffer array to store a number of adc samples (Use an index to store this position in this array and increment each time the sample is taken)
   - Create a function which uses the array and returns the frequency
       - Calculate the average of the ADC
       - Compare the value at each index to the average to determine if the signal is high or low

@@ -103,11 +103,12 @@ Your task is to achieve 2-way simultaneous communication between 2 microcontroll
 	- Ensure it is clear how the instructions are structured and how they are delimited.
 	- Make it clear what information is sent in your communication protocol.
  		- Define this separately for each direction
-2. Discuss any design considerations for ensuring adequate data flow:
+2. Discuss design considerations for reliable commmunications:
    	- What is buffer overflow and why would it occur.
-   	- What affects latency, how could it be minimized.
+   	- What error detection exists in this communication. What could be added?
 3. Demonstrate functional 1-way communication*
 4. Demonstrate functional 2-way communication*
+	- Including use of LCD screen
 5. Demonstrate a functional interpretation of the sensor data
 	- This must include some data transformation to make it readable, consider what might be useful for the final project.
 

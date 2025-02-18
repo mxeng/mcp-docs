@@ -24,11 +24,13 @@ Drive a 12 volt lamp using a transistor to blink it on and off a couple of times
 
 **TASK 2**
 
-Gather data to calibrate the range sensor and demonstrate a calibrated range sensor printing distance to an serial. 
+Use the range sensor to control the DC motor, turning on the DC motor if there is an object within 10cm.
 
 **TASK 3**
 
-Use the range sensor to control the DC motor, turning on the DC motor if there is an object within 10cm.
+Gather data to calibrate the range sensor and demonstrate a calibrated range sensor printing distance to an serial. 
+
+
 
 ### Before the lab
 - **Review string formatting in c, suggest using sprintf [reference](https://en.cppreference.com/w/cpp/io/c/fprintf)**

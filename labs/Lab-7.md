@@ -1,6 +1,6 @@
 # Mechatronic Microcontroller Project MXEN2003
 
-## Laboratory 7: Serial Communications, LCD printing and light following
+## Laboratory 7: Serial Communications, LCD printing and Basic Cart Logic
 ### Lab Briefing
 
 Universal Synchronous and Asynchronous serial Receiver and Transmitter or USART is a flexible serial communication device. It is a 2 pin commmunication system using transmit, Tx, and Receive, Rx, pins for independant full duplex communication. In this lab we will be using it in asynchronous mode with each device having its own internal clock generation. For wireless communication you will be using XBee modules to connect Tx on one microcontroller to Rx on the other wirelessly.

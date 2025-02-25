@@ -46,7 +46,7 @@ int main(void)
 ### Outcomes
 
 1.  Calculate a series limiting resistor value to ensure current limit is not exceeded for an LED connected to PORTA.
-    - Check the [atmega](http://www.atmel.com/Images/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf) and [LED](https://www.farnell.com/datasheets/1498852.pdf) datasheets for their electrical characteristics, you may assume VCC is 5v.
+    - Check the [atmega]([http://www.atmel.com/Images/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf](https://ww1.microchip.com/downloads/en/devicedoc/atmel-2549-8-bit-avr-microcontroller-atmega640-1280-1281-2560-2561_datasheet.pdf)) and [LED](https://www.farnell.com/datasheets/1498852.pdf) datasheets for their electrical characteristics, you may assume VCC is 5v.
     
 2.  Describe how the written pins are specified. What is the purpose of the | and the & symbols, what would happen if they were removed? 
     - Check the Bit Manipulation tutorial https://github.com/mxeng/mcp-docs/blob/master/tutorials/bit_manipulation.md)

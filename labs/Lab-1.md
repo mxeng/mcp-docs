@@ -19,7 +19,7 @@ Your task is to demonstrate the ability to modify and upload code to the microco
 
  - **This unit will involve programming a microcontroller in C, you will need to review programming notes and material and if unfamiliar with C language, and complete tutorials on the basics of C language.**
    - Some references: [C reference](http://en.cppreference.com/w/c), [GNU C reference](http://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html)
- - **The ATmega2560 is the microcontroller being used in this unit download the [datasheet](http://www.atmel.com/Images/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf)**
+ - **The ATmega2560 is the microcontroller being used in this unit, download the datasheet on Blackboard**
    - The ATmega2560 is being used on an [Arduino Mega](http://arduino.cc/en/Main/ArduinoBoardMega), though you will not be using the Arduino IDE for development in this unit.
  - **In this unit you will be programming in Visual Studio Code you may wish to look at a [tutorial on the development environment](https://code.visualstudio.com/docs/introvideos/basics)**
  - **Read the code below and ensure you understand the functionality**

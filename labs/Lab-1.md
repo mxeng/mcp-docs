@@ -23,7 +23,7 @@ Your task is to demonstrate the ability to modify and upload code to the microco
    - The ATmega2560 is being used on an [Arduino Mega](http://arduino.cc/en/Main/ArduinoBoardMega), though you will not be using the Arduino IDE for development in this unit.
  - **In this unit you will be programming in Visual Studio Code you may wish to look at a [tutorial on the development environment](https://code.visualstudio.com/docs/introvideos/basics)**
  - **Read the code below and ensure you understand the functionality**
- - **A code framework is provided in the GitHub repository, https://github.com/mxeng/mcp, download this repository, install Visual Studio Code and setup the environment to enable uploading to the atmega board, see readme for instructions.**
+ - **A code framework is provided in the GitHub repository, https://github.com/mxeng/mcp-vs, download this repository, install Visual Studio Code and setup the environment to enable uploading to the atmega board, see readme for instructions.**
 
 ```c
 

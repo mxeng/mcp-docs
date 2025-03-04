@@ -40,7 +40,7 @@ Task two is to light up a series of eight led's based on the ammount of light be
 
   - **Read up on analogue joysticks and sketch a circuit diagram of the internals of the analogue joystick and what it is connected to on your microcontroller.**
 
-  - **Read up on reading digital using ```PINx``` registers (e.g ```PINA``` for Port A etc) to read digital inputs, and how to either configure an internal pull-up resistor for the select line or wire an external pull-up resistor**
+  - **Read up on reading digital using ```PINx``` registers (e.g ```PINA``` for Port A etc) to read digital inputs, and how to either configure an internal pull-up resistor for the select line or wire an external pull-up resistor. See [input.md](https://github.com/mxeng/mcp-docs/blob/master/tutorials/input.md) for a brief tutorial.**
 
   - **Familiarise with the ADC pin locations and functionality through the ATmega2560 datasheet**
 

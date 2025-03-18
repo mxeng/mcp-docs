@@ -41,11 +41,12 @@ Gather data to calibrate the range sensor and demonstrate a calibrated range sen
 - **Investigate flyback protection and why we might need it when controlling DC motors or Electromagnets**
 
 ### Outcomes
-- Demonstrate a load (12 volt lamp) being driven using a transistor ensure this is safe for all components.
-- Demonstrate an inductive load being driven using a darlington driver including flyback diode for protection.
-- Demonstrate a DC motor being triggered by range sensor.
-- Show range sensor calibration plan and how you will use the results
+1. Demonstrate a load (12 volt lamp) being driven (on and off) using a transistor ensure this is safe for all components.
+2. Demonstrate an inductive load being driven using a darlington driver including flyback diode for protection.
+3. Demonstrate a DC motor being triggered by a range sensor value.
+4. Show range sensor calibration plan and how you will use the results
   - You may need some form of data linearization
-- Describe the function of the flyback diode in the darlington driver and motor circuit.
+  - Calibrated values should be in distance units
+5. Describe the function of the flyback diode in the darlington driver and motor circuit.
   - Explain what happens to the current flow when the motor is switched off (with and without the flyback diode)
   - Include a circuit diagram

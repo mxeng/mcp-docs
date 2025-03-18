@@ -45,8 +45,8 @@ Gather data to calibrate the range sensor and demonstrate a calibrated range sen
 2. Demonstrate an inductive load being driven using a darlington driver including flyback diode for protection.
 3. Demonstrate a DC motor being triggered by a range sensor value.
 4. Show range sensor calibration plan and how you will use the results
-  - You may need some form of data linearization
-  - Calibrated values should be in distance units
+   - You may need some form of data linearization
+   - Calibrated values should be in distance units
 5. Describe the function of the flyback diode in the darlington driver and motor circuit.
-  - Explain what happens to the current flow when the motor is switched off (with and without the flyback diode)
-  - Include a circuit diagram
+   - Explain what happens to the current flow when the motor is switched off (with and without the flyback diode)
+   - Include a circuit diagram

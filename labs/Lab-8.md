@@ -30,7 +30,7 @@ Assemble and demonstrate a working wireless robot drive system with intuitive co
 ### Outcomes
 - Show the configuration of the L293 H-bridge used to control the two motor with variable speed and direction, including a circuit diagram.
 - Show calculations / algorithm used to convert the joystick values into appropriate PWM comparison values and IO signals for motor control*.
-  - This should include where the serial communication takes place.
+  - Include which microcontroller does the calculations and what is transmitted as part of your communication protocol.
 - Demonstrate a PWM with appropriate frequency (**100-500Hz**) and duty cycle control on a oscilloscope.
 - Demonstrate a appropriately wired circuit for motor control.
 - Demonstrate a working wireless robot drive system with intuitive controls*.

@@ -4,7 +4,7 @@
 
 ### Lab Briefing
 
-During this lab you will use analogue and digital inputs to read the state of a joystick and thermister and display their value on the LEDs setup during the previous lab.
+During this lab you will use analogue and digital inputs to read the state of a joystick and photo-resistor and display their value on the LEDs setup during the previous lab.
 
 ADC stands for Analogue to Digital Converter.  It is an interface which converts an analogue voltage (e.g 0-5V) into a digital signal (e.g an 8-bit or 10-bit number).  An ADC is essential if you wish to be able to process analogue signals with your Microcontroller.
 

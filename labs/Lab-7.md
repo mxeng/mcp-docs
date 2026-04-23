@@ -44,6 +44,7 @@ while(1)
 ```c
 //main function initialization
 serial2_init();
+milliseconds_init();
 uint8_t recievedData[2]; //recieved data array
 char serial_string[60] = {0}; // String used for printing to terminal
 

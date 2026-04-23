@@ -18,6 +18,8 @@ serial2_init();
 milliseconds_init();
 uint8_t databyte1 = 0;
 uint8_t databyte2 = 0;
+uint32_t current_ms;
+uint32_t last_send_ms = 0;
 
 while(1)
 {
@@ -42,15 +44,12 @@ while(1)
 ```c
 //main function initialization
 serial2_init();
-milliseconds_init();
 uint8_t recievedData[2]; //recieved data array
 char serial_string[60] = {0}; // String used for printing to terminal
 
 while(1)
 {
-	//main loop
-	current_ms = milliseconds_now();
-	
+	//main loop	
 	//sending section
 	if(serial2_available()) //Returns true if new data available on serial buffer
 	{

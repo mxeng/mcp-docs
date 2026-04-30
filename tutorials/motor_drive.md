@@ -45,11 +45,11 @@ If we wire our H-bridge up so that the PWM goes to the enable lines and the dire
 For the following wiring:
 ```
 EnA: OC3A
-In1: A0
-In2: A1
+In1: PA0
+In2: PA1
 EnB: OC3B
-In3: A2
-In4: A3
+In3: PA2
+In4: PA3
 Out1, Out2: left motor
 Out3, Out4: right motor
 ```
